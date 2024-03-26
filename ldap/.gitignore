@@ -35,3 +35,8 @@ out/
 
 ### VS Code ###
 .vscode/
+**/ssl/ca.crt
+**/ssl/keystore.p12
+**/ssl/tls.crt
+**/ssl/tls.key
+**/ssl/truststore.jks
