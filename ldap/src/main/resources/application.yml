@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: ldap
+
+  # 30389, 30904
+  ldap:
+#    urls: ldaps://172.10.40.157:30904
+#    urls: ldap://172.10.40.157:30389
+
+#    base: dc=openldap,dc=dev,dc=tps,dc=com
+#    username: cn=admin,dc=openldap,dc=dev,dc=tps,dc=com
+#    password: cloud1234
+
+    urls: ldap://localhost:389
+    base: dc=tps,dc=com
+    username: cn=admin,dc=tps,dc=com
+    password: admin
+
+    keystore: ssl/keystore.p12
+    keystorePassword: 123456
+    keystoreType: PKCS12
+    truststore: ssl/truststore.jks
+    truststorePassword: 123456
+
+server:
+  port: 8081
