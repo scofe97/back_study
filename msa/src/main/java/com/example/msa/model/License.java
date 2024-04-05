@@ -1,19 +1,23 @@
 package com.example.msa.model;
 
 import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+import org.springframework.hateoas.RepresentationModel;
 
+@Getter
+@Setter
 @Builder
-public record License(
-         int id,
-         String licenseId,
-         String description,
-         String organizationId,
-         String productName,
-         String licenseType
-) {
-    public License withOrganizationId(String newOrganizationId) {
-        return new License(this.id, this.licenseId, this.description, newOrganizationId, this.productName, this.licenseType);
-    }
+@ToString
+public class License extends RepresentationModel<License> {
 
+    private int id;
+    private String licenseId;
+    private String description;
+    private String organizationId;
+    private String productName;
+    private String licenseType;
 
+    // 생성자, 메소드 등 추가 가능
 }

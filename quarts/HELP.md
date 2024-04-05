@@ -7,8 +7,8 @@ For further reference, please consider the following sections:
 * [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.2.4/gradle-plugin/reference/html/)
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.2.4/gradle-plugin/reference/html/#build-image)
 * [Spring Web](https://docs.spring.io/spring-boot/docs/3.2.4/reference/htmlsingle/index.html#web)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/3.2.4/reference/htmlsingle/index.html#using.devtools)
 * [Quartz Scheduler](https://docs.spring.io/spring-boot/docs/3.2.4/reference/htmlsingle/index.html#io.quartz)
+* [Spring for Apache Kafka](https://docs.spring.io/spring-boot/docs/3.2.4/reference/htmlsingle/index.html#messaging.kafka)
 
 ### Guides
 The following guides illustrate how to use some features concretely:

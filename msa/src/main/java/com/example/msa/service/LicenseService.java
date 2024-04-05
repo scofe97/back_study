@@ -31,15 +31,15 @@ public class LicenseService {
     public String createLicense(License license, String organizationId, Locale locale){
         if(Objects.isNull(license) && Objects.isNull(organizationId)) return null;
 
-        License changeLicence = license.withOrganizationId(organizationId);
-        return String.format(messages.getMessage("license.create.message",null,locale), changeLicence.toString()); // 특정 메시지를 조회하기 위해 전달된 로케일 설정
+        license.setOrganizationId(organizationId);
+        return String.format(messages.getMessage("license.create.message",null,locale), license.toString()); // 특정 메시지를 조회하기 위해 전달된 로케일 설정
     }
 
     public String updateLicense(License license, String organizationId){
         if(Objects.isNull(license) && Objects.isNull(organizationId)) return null;
 
-        License changeLicence = license.withOrganizationId(organizationId);
-        return String.format(messages.getMessage("license.update.message", null, null), changeLicence.toString()); // 특정 메시지를 조회하기 위해 null 로케일 설정
+        license.setOrganizationId(organizationId);
+        return String.format(messages.getMessage("license.update.message", null, null), license.toString()); // 특정 메시지를 조회하기 위해 null 로케일 설정
     }
 
     public String deleteLicense(String licenseId, String organizationId){

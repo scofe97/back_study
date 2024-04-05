@@ -84,4 +84,3 @@ public class JavaSchedulerTest {
         executor.shutdown();
     }
 }
-
