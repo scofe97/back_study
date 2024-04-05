@@ -15,6 +15,7 @@ public class QuartzTriggerTest {
                 .usingJobData("filePath", "/path/to/file") // 파일 경로 설정
                 .build();
 
+
         Trigger trigger = TriggerBuilder.newTrigger()
                 .withIdentity("complexTrigger", "group1") // 트리거 식별자 설정
                 .forJob(jobDetail) // 실행할 JobDetail 지정

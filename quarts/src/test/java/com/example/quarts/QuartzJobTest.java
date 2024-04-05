@@ -1,7 +1,6 @@
 package com.example.quarts;
 
 import com.example.quarts.quarts.job.MyJob;
-import com.example.quarts.quarts.job.MyJobListener;
 import org.junit.jupiter.api.Test;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
@@ -31,7 +30,6 @@ public class QuartzJobTest {
                         .repeatForever())
                 .build();
 
-        scheduler.getListenerManager().addJobListener(new MyJobListener(), EverythingMatcher.allJobs());
         scheduler.scheduleJob(jobDetail, trigger);
     }
 
@@ -69,7 +67,7 @@ public class QuartzJobTest {
 
         // Job의 data map 조회
         JobDataMap dataMap = jobDetail.getJobDataMap();
-        System.out.println("Job Data Map: " + dataMap.getString("exampleKey"));
+        System.out.println("Job Data Map: " + dataMap.getString("key"));
 
         // Job의 지속성 조회
         boolean isDurable = jobDetail.isDurable();
