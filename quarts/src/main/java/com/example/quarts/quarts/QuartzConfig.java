@@ -6,6 +6,7 @@ import com.example.quarts.quarts.listener.JobsGlobalListener;
 import com.example.quarts.quarts.listener.TriggersGlobalListener;
 import lombok.RequiredArgsConstructor;
 import org.quartz.*;
+import org.quartz.spi.JobFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.PropertiesFactoryBean;
 import org.springframework.context.annotation.Bean;
@@ -72,7 +73,7 @@ public class QuartzConfig {
 
     private Properties quartzProperties() {
         PropertiesFactoryBean propertiesFactoryBean = new PropertiesFactoryBean();
-        propertiesFactoryBean.setLocation(new ClassPathResource("quarts.properties"));
+        propertiesFactoryBean.setLocation(new ClassPathResource("quartz.properties"));
         Properties properties = null;
         try {
             propertiesFactoryBean.afterPropertiesSet();

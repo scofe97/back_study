@@ -5,7 +5,6 @@ import org.quartz.*;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@DisallowConcurrentExecution // 중복 실행방지
 public class ErrorJob implements Job {
 
     @Override

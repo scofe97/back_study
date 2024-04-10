@@ -2,6 +2,7 @@ package com.example.quarts.quarts.service;
 
 import com.example.quarts.quarts.job2.ErrorJob;
 import com.example.quarts.quarts.job2.NormalJob;
+import com.example.quarts.quarts.job2.StatefulJob;
 import lombok.RequiredArgsConstructor;
 import org.quartz.JobBuilder;
 import org.quartz.JobDataMap;
@@ -30,6 +31,16 @@ public class JobDetailService {
         return JobBuilder.newJob(ErrorJob.class)
                 .withIdentity(jobkey.getName(), jobkey.getGroup())
                 .storeDurably(true)
+                .build();
+    }
+
+    public JobDetail statefulBuild(JobKey jobKey) {
+        JobDataMap jobDataMap = new JobDataMap();
+        jobDataMap.put("count", 0);
+
+        return JobBuilder.newJob(StatefulJob.class)
+                .withIdentity(jobKey.getName(), jobKey.getGroup())
+                .usingJobData(jobDataMap)
                 .build();
     }
 }

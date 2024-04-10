@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: msa
+
+license:
+  create:
+    message: "License created %s"
+  update:
+    message: "License %s updated"
+  delete:
+    message: "Deleting license with id %s for the organization %s"
