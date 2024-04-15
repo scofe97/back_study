@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: "configserver"
+
+  profiles:
+    active: native
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: "file:///Users//simbohyeon//study/back_study//msa//section6//config"
+        # search-locations: "classpath:/config"
+
+
+server:
+  port: 8071
+
