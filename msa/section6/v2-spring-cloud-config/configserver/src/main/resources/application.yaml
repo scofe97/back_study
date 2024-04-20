@@ -3,15 +3,41 @@ spring:
     name: "configserver"
 
   profiles:
-    active: native
+    active: git
 
   cloud:
     config:
       server:
-        native:
-          search-locations: "file:///Users//simbohyeon//study/back_study//msa//section6//config"
+        # native:
+        # search-locations: "file:///Users//simbohyeon//study/back_study//msa//section6//config"
         # search-locations: "classpath:/config"
+        git:
+          uri: "https://github.com/scofe97/back_study.git"
+          default-label: main
+          search-paths: msa/section6/config
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
 
 server:
   port: 8071
