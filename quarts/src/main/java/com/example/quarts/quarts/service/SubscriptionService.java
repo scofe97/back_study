@@ -1,6 +1,5 @@
 package com.example.quarts.quarts.service;
 
-import com.example.quarts.quarts.listener.JobsGlobalListener;
 import com.example.quarts.quarts.listener.JobsListener;
 import com.example.quarts.quarts.listener.TriggersGlobalListener;
 import jakarta.annotation.PostConstruct;
@@ -11,9 +10,6 @@ import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 @Service
 @RequiredArgsConstructor
