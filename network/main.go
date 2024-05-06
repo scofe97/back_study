@@ -1,6 +1,7 @@
 package main
 
 import (
+	"crypto/tls"
 	"fmt"               // 표준 출력을 위한 패키지
 	"log"               // 로깅을 위한 패키지
 	"net/http"          // HTTP 프로토콜을 다루기 위한 패키지
@@ -20,13 +21,21 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 // main 함수는 서버를 시작하고 요청을 기다리는 주 함수
 func main() {
-	var httpServer http.Server                 // HTTP 서버 생성
+	server := &http.Server{
+		TLSConfig: &tls.Config{
+			ClientAuth: tls.RequireAndVerifyClientCert,
+			MinVersion: tls.VersionTLS12,
+		},
+		Addr: ":18443",
+	}
+
 	http.HandleFunc("/", handler)              // "/" 경로에 대한 요청을 handler 함수로 처리하도록 설정
-	log.Println("start http listening :18888") // 로그에 서버 시작 메시지 출력
-	httpServer.Addr = ":18888"                 // 서버 주소 설정
-	log.Println(httpServer.ListenAndServe())   // 서버를 시작하고, 발생할 수 있는 에러를 로그로 출력
+	log.Println("start http listening :18443") // 로그에 서버 시작 메시지 출력
+	err := server.ListenAndServeTLS("server.crt", "server.key")
+	log.Println(err)
 }
 
 // curl --http1.0 http://localhost:18888/greeting
 // curl --http1.0 --get --data-urlencode "search workd" http://localhost:18888
 // curl -v --http1.0 http://localhost:18888/greeting
+//
