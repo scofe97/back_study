@@ -1,0 +1,26 @@
+sse:
+  enabled: true
+  image:
+    name: "\n\n\n"
+    tag: '123'   # 태그 변경
+  serviceLabels: {}
+  resources:
+    enabled: false
+  ingress:
+    enabled: true
+    className: nginx
+    annotations:
+      nginx.ingress.kubernetes.io/proxy-read-timeout: '21600'
+      nginx.ingress.kubernetes.io/eventsource: 'true'
+    hosts:
+    - host: sse.dev.tps.com
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+  container:
+    port: 8088
+  service:
+    type: ClusterIP
+    port: 80
+  securityContext: {}
+  podSecurityContext: {}
