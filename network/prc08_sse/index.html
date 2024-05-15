@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSE Example</title>
+</head>
+<body>
+<h1>Server-Sent Events</h1>
+<ul id="eventList"></ul>
+
+<script>
+    const evtSource = new EventSource("http://localhost:3000/events");
+
+    // 일반 메시지의 이벤트 핸들러
+    evtSource.onmessage = (e) => {
+        const newElement = document.createElement("li");
+        newElement.innerHTML = "message: " + e.data;
+        document.getElementById("eventList").appendChild(newElement);
+    };
+
+    // 'ping' 이벤트 리스너 추가
+    evtSource.addEventListener("ping", (e) => {
+        const newElement = document.createElement("li");
+        const obj = JSON.parse(e.data);
+        newElement.innerHTML = "ping at " + obj.time;
+        document.getElementById("eventList").appendChild(newElement);
+    }, false);
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSE Example</title>
+</head>
+<body>
+<h1>Server-Sent Events - Group A</h1>
+<ul id="messagesA"></ul>
+
+<h1>Server-Sent Events - Group B</h1>
+<ul id="messagesB"></ul>
+
+<button onclick="notifyGroupB()">Notify Group B</button>
+
+<script>
+    // 그룹 A의 클라이언트
+    const evtSourceA = new EventSource("http://localhost:3000/eventsA");
+    evtSourceA.onmessage = function(event) {
+        const messagesA = document.getElementById("messagesA");
+        const newMessageA = document.createElement("li");
+        newMessageA.textContent = event.data;
+        messagesA.appendChild(newMessageA);
+    };
+
+    // 그룹 B의 클라이언트
+    const evtSourceB = new EventSource("http://localhost:3000/eventsB");
+    evtSourceB.onmessage = function(event) {
+        const messagesB = document.getElementById("messagesB");
+        const newMessageB = document.createElement("li");
+        newMessageB.textContent = event.data;
+        messagesB.appendChild(newMessageB);
+    };
+
+    function notifyGroupB() {
+        fetch("http://localhost:3000/notifyB", { method: 'GET' })
+            .then(response => response.text())
+            .then(data => console.log(data));
+    }
+
+</script>
+</body>
+</html>

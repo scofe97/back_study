@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #chat { max-width: 600px; margin: 0 auto; }
+        #messages { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; }
+        #input { display: flex; }
+        #username { width: 100px; }
+        #message { flex: 1; }
+    </style>
+</head>
+<body>
+<div id="chat">
+    <h2>WebSocket Chat</h2>
+    <div id="messages"></div>
+    <div id="input">
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="message" placeholder="Message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+    // 웹소켓 서버와의 연결 설정
+    const ws = new WebSocket('ws://localhost:8080/ws');
+
+    // 서버로부터 메시지를 수신했을 때 호출되는 함수
+    ws.onmessage = function(event) {
+        const message = JSON.parse(event.data);
+        const messages = document.getElementById('messages');
+        // 새로운 메시지를 채팅창에 추가
+        messages.innerHTML += `<p><strong>${message.username}</strong>: ${message.message}</p>`;
+        // 스크롤을 아래로 이동
+        messages.scrollTop = messages.scrollHeight;
+    };
+
+    // 메시지 전송 함수
+    function sendMessage() {
+        const username = document.getElementById('username').value;
+        const message = document.getElementById('message').value;
+        if (username && message) {
+            // 메시지를 JSON 형식으로 웹소켓을 통해 서버로 전송
+            ws.send(JSON.stringify({ username: username, message: message }));
+            // 메시지 입력란 초기화
+            document.getElementById('message').value = '';
+        }
+    }
+</script>
+</body>
+</html>
