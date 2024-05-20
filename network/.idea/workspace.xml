@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e33e4913-e808-49ab-850d-0a0637e82d51" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../java-mid2/src/set/javaset/JavaSetMain.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2g85kqSkfY2YuoTRLymYuQ9b5YF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build client.go.executor": "Run",
+    "Go Build.go build github.com/simbohyeon/back_study.executor": "Run",
+    "Go Build.go build test.go.executor": "Run",
+    "Go Build.go build test2.go.executor": "Run",
+    "Go Test.BenchmarkRSAEncryption in github.com/simbohyeon/back_study.executor": "Run",
+    "Go Test.BenchmarkRSAEncryption in github.com/simbohyeon/back_study/tls.executor": "Run",
+    "Go Test.go test github.com/simbohyeon/back_study/tls.executor": "Run",
+    "Go Test.gobench encript_test.go.executor": "Run",
+    "Go Test.gobench github.com/simbohyeon/back_study.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/simbohyeon/study/back_study/network/tls",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tls" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.go test github.com/simbohyeon/back_study/tls">
+    <configuration name="go build github.com/simbohyeon/back_study" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="network" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/simbohyeon/back_study" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/client.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BenchmarkRSAEncryption in github.com/simbohyeon/back_study" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="network" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/simbohyeon/back_study" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gobench" />
+      <pattern value="^\QBenchmarkRSAEncryption\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BenchmarkRSAEncryption in github.com/simbohyeon/back_study/tls" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="network" />
+      <working_directory value="$PROJECT_DIR$/tls" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/simbohyeon/back_study/tls" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gobench" />
+      <pattern value="^\QBenchmarkRSAEncryption\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test github.com/simbohyeon/back_study/tls" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="network" />
+      <working_directory value="$PROJECT_DIR$/tls" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/simbohyeon/back_study/tls" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gobench github.com/simbohyeon/back_study" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="network" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/simbohyeon/back_study" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gobench" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.go test github.com/simbohyeon/back_study/tls" />
+        <item itemvalue="Go Test.BenchmarkRSAEncryption in github.com/simbohyeon/back_study/tls" />
+        <item itemvalue="Go Test.BenchmarkRSAEncryption in github.com/simbohyeon/back_study" />
+        <item itemvalue="Go Test.gobench github.com/simbohyeon/back_study" />
+        <item itemvalue="Go Build.go build github.com/simbohyeon/back_study" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-graalvm-jdk-21.0.2-f644763e9732-c0dbaf3a" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="e33e4913-e808-49ab-850d-0a0637e82d51" name="Changes" comment="" />
+      <created>1706503899695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706503899695</updated>
+      <workItem from="1715066511087" duration="4570000" />
+      <workItem from="1715406605383" duration="7984000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
