@@ -4,8 +4,8 @@ public class MyListPerformanceTest {
     public static void main(String[] args) {
         int size = 50_000;
         System.out.println("===MyArrayList 추가===");
-        addFirst(new collection.list.MyArrayList<>(), size);
-        addMid(new collection.list.MyArrayList<>(), size);
+        addFirst(new MyArrayList<>(), size);
+        addMid(new MyArrayList<>(), size);
         collection.list.MyArrayList<Integer> arrayList = new collection.list.MyArrayList<>();
         addLast(arrayList, size);
 

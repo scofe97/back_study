@@ -12,8 +12,7 @@ public class WildcardEx {
     static void printWildcardV1(Box<?> box) {
         System.out.println("? = " + box.getValue());
     }
-
-
+    
     static <T extends Animal> void printGenericV2(Box<T> box) {
         T t = box.getValue();
         System.out.println("t.getName() = " + t.getName());

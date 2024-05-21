@@ -7,7 +7,7 @@ import java.util.List;
 
 public class JavaListPerformanceTest {
     public static void main(String[] args) {
-        int size = 50_000;
+        int size = 100_000;
         int loop = 10_000;
 
         System.out.println("===ArrayList 추가===");
@@ -45,9 +45,8 @@ public class JavaListPerformanceTest {
         search(linkedList, loop, size -1);
 
 
-        System.out.println("===List.of 조회 및 검색===");
-        List<Integer> immutableList = createImmutableList(size);
 
+        List<Integer> immutableList = createImmutableList(size);
         System.out.println("===List.of 조회===");
         getIndex(immutableList, loop, 0);
         getIndex(immutableList, loop, size / 2);

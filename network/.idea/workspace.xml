@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33e4913-e808-49ab-850d-0a0637e82d51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java-mid2/src/set/javaset/JavaSetMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-mid2/src/collection/array/ListMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/array/ArrayMain1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/array/ArrayMain1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/array/MyArrayListV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/array/MyArrayListV4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/array/MyArrayListV4Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/array/MyArrayListV4Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/link/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/link/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/list/JavaListPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/list/JavaListPerformanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/list/MyListPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/list/MyListPerformanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/generic/animal/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/generic/animal/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/generic/ex1/RowTypeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/generic/ex1/RowTypeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/generic/ex5/WildcardEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/generic/ex5/WildcardEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +157,7 @@
       <updated>1706503899695</updated>
       <workItem from="1715066511087" duration="4570000" />
       <workItem from="1715406605383" duration="7984000" />
+      <workItem from="1716252910992" duration="779000" />
     </task>
     <servers />
   </component>

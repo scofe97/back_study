@@ -9,14 +9,6 @@ public class Node {
         this.item = item;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Node{" +
-//                "item=" + item +
-//                ", next=" + next +
-//                '}';
-//    }
-
 
     @Override
     public String toString() {

@@ -4,7 +4,6 @@ public class MyArrayListV4Main {
 
     public static void main(String[] args) {
         collection.array.MyArrayListV4<String> stringList = new collection.array.MyArrayListV4<>();
-
         stringList.add("a");
         stringList.add("b");
         stringList.add("c");
@@ -17,6 +16,5 @@ public class MyArrayListV4Main {
         intList.add(3);
         Integer integer = intList.get(0);
         System.out.println("integer = " + integer);
-
     }
 }
