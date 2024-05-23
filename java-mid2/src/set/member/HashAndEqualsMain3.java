@@ -2,12 +2,12 @@ package set.member;
 
 import set.MyHashSetV2;
 
-public class HashAndEqualsMain2 {
+public class HashAndEqualsMain3 {
     public static void main(String[] args) {
         // 중복 등록
         MyHashSetV2 set = new MyHashSetV2();
-        set.member.MemberOnlyHash m1 = new set.member.MemberOnlyHash("A");
-        set.member.MemberOnlyHash m2 = new set.member.MemberOnlyHash("A");
+        Member m1 = new Member("A");
+        Member m2 = new Member("A");
 
         System.out.println("m1.hashCOde() = " + m1.hashCode());
         System.out.println("m2.hashCode() = " + m2.hashCode());
@@ -21,7 +21,7 @@ public class HashAndEqualsMain2 {
         System.out.println(set);
 
         // 검색 실패
-        set.member.MemberOnlyHash searchValue = new set.member.MemberOnlyHash("A");
+        Member searchValue = new Member("A");
         System.out.println("searchValue = " + searchValue.hashCode());
         boolean contains = set.contains(searchValue);
         System.out.println("contains = " + contains);

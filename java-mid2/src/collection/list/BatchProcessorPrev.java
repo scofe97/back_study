@@ -1,12 +1,8 @@
 package collection.list;
 
-public class BatchProcessor {
+public class BatchProcessorPrev {
 
-    private final MyList<Integer> list;
-
-    public BatchProcessor(MyList<Integer> list) {
-        this.list = list;
-    }
+    private final MyArrayList<Integer> list = new MyArrayList<>(); //코드 변경 필요
 
     public void logic(int size) {
         long startTime = System.currentTimeMillis();

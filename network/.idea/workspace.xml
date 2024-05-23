@@ -5,16 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e33e4913-e808-49ab-850d-0a0637e82d51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java-mid2/src/collection/array/ListMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/array/ArrayMain1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/array/ArrayMain1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/array/MyArrayListV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/array/MyArrayListV4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/array/MyArrayListV4Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/array/MyArrayListV4Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/link/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/link/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/list/JavaListPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/list/JavaListPerformanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/list/MyListPerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/list/MyListPerformanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-mid2/src/generic/animal/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/generic/animal/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-mid2/src/generic/ex1/RowTypeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/generic/ex1/RowTypeMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-mid2/src/generic/ex5/WildcardEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/generic/ex5/WildcardEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collection/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/UserPersistenceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/UserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/CallHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/ISPSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/InternetSessionHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/PhoneSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/Subscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch3/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch3/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch3/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/service/PersistenceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/service/UserPersistenceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/FormatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/JSONFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/MessagePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/TextFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../designPattern/test_msg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-mid2/src/collection/list/BatchProcessorPrev.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-mid2/src/set/javaset/JavaSetMain2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java-mid2/src/set/member/HashAndEqualsMain3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/src/test/java/StreamCollectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/src/test/java/StreamCollectors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/list/BatchProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/list/BatchProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/list/BatchProcessorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/list/BatchProcessorMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/collection/map/JavaMapMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/collection/map/JavaMapMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/set/MyHashSetV0.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/set/MyHashSetV0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/src/set/member/HashAndEqualsMain2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-mid2/src/set/member/HashAndEqualsMain2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
