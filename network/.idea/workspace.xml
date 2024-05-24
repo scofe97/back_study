@@ -4,76 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e33e4913-e808-49ab-850d-0a0637e82d51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter2_builder/build1/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter2_builder/build1/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter2_builder/build1/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter2_builder/build1/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter2_builder/build1/UserDTOBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter2_builder/build1/UserWebDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter2_builder/build1/UserWebDTOBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter2_builder/build2/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter2_builder/build2/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter3_simple_factory/BlogPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter3_simple_factory/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter3_simple_factory/NewsPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter3_simple_factory/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter3_simple_factory/PostFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter3_simple_factory/ProductPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter4_factory/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter4_factory/JSONMessageCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter4_factory/MessageCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter4_factory/TextMessageCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter4_factory/message/JSONMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter4_factory/message/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter4_factory/message/TextMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/Instance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/ResourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/Storage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/aws/AwsResourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/aws/Ec2Instance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/aws/S3Storage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/gcp/GoogleCloudStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/gcp/GoogleComputeEngineInstance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/gcp/GoogleResourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter5_abstract_factory/test/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter6_object_pool/Bitmap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter6_object_pool/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter6_object_pool/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter6_object_pool/ObjectPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter6_object_pool/Point2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter6_object_pool/Poolable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch1/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch1/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch1/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/UserPersistenceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch1/UserPersistenceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch1/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch1/UserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/CallHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch2/CallHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/ISPSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch2/ISPSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/InternetSessionHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch2/InternetSessionHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/PhoneSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch2/PhoneSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch2/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch2/Subscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch3/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch3/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch3/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch3/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch3/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch3/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch4/start/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch4/start/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch4/start/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/service/PersistenceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch4/start/service/PersistenceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch4/start/service/UserPersistenceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch4/start/service/UserPersistenceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/FormatException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch5/FormatException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/Formatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch5/Formatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/JSONFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch5/JSONFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch5/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch5/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/MessagePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch5/MessagePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1/ch5/TextFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/src/main/java/org/example/chapter1_solid/ch5/TextFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../designPattern/test_msg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../designPattern/test_msg.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e33e4913-e808-49ab-850d-0a0637e82d51" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
