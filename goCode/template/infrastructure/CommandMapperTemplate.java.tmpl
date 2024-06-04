@@ -1,0 +1,14 @@
+package {{.InfrastructurePackage}}.mapper;
+
+import org.apache.ibatis.annotations.Mapper;
+import java.util.List;
+import {{.InfrastructurePackage}}.model.{{.ModelName}};
+
+@Mapper
+public interface {{.ModelName}}CommandMapper {
+    void create{{.DomainUpperCase}}({{.ModelName}} createModel);
+
+    void update{{.DomainUpperCase}}({{.ModelName}} updateModel);
+
+    void delete{{.DomainUpperCase}}(List<{{.ModelName}}> deleteModelList);
+}

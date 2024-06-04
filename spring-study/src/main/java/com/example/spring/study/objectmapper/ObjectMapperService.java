@@ -3,6 +3,7 @@ package com.example.spring.study.objectmapper;
 import com.example.spring.study.objectmapper.dto.Person;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
 

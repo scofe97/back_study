@@ -1,0 +1,5 @@
+•passingFailing.get(true) = [Student[name=john, grade=91], Student[name=dean, grade=74], Student[name=sammy, grade=64], Student[name=dean, grade=79]]
+]passingFailing.get(false) = [Student[name=matthew, grade=34], Student[name=clock, grade=44]]
+12400
+8{management=8990, it=12400, support=11950, sales=11055}
+Ï{management=[Employee[name=drain, salary=8990, department=management]], it=[Employee[name=clock, salary=4600, department=it], Employee[name=cargo, salary=2400, department=it], Employee[name=dean, salary=5400, department=it]], support=[Employee[name=matthew, salary=7600, department=support], Employee[name=sammy, salary=4350, department=support]], sales=[Employee[name=matthew, salary=7600, department=sales], Employee[name=john, salary=3455, department=sales]]}

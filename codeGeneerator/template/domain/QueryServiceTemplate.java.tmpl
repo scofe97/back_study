@@ -1,0 +1,11 @@
+package {{.PackageName}};
+
+import {{.ApplicationPackage}}.dto.response.{{.DomainUpperCase}}Response;
+
+import java.util.List;
+
+public interface {{.DomainUpperCase}}QueryService {
+    List<{{.DomainUpperCase}}Response> select{{.DomainUpperCase}}List();
+
+    {{.DomainUpperCase}}Response select{{.DomainUpperCase}}();
+}

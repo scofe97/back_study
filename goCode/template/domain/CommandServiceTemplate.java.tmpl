@@ -1,0 +1,14 @@
+package {{.DomainPackage}};
+
+import {{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}CreateRequest;
+import {{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}SelectRequest;
+import {{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}UpdateRequest;
+
+import java.util.List;
+
+public interface {{.DomainUpperCase}}CommandService {
+
+    void create{{.DomainUpperCase}}({{.DomainUpperCase}}CreateRequest request, String userId);
+    void update{{.DomainUpperCase}}({{.DomainUpperCase}}UpdateRequest request, String userId);
+    void delete{{.DomainUpperCase}}(List<{{.DomainUpperCase}}SelectRequest> requests);
+}

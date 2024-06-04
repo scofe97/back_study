@@ -1,0 +1,48 @@
+package {{.PackageName}}.controller;
+
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import {{.PackageName}}.dto.request.{{.DomainUpperCase}}CreateRequest;
+import {{.PackageName}}.dto.request.{{.DomainUpperCase}}SelectRequest;
+import {{.PackageName}}.dto.request.{{.DomainUpperCase}}UpdateRequest;
+import {{.DomainPackage}}.{{.DomainUpperCase}}CommandService;
+import org.okestro.tps.common_lib.message.TpsResponse;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@Slf4j
+@RestController
+@RequiredArgsConstructor
+@RequestMapping("/{{.DomainLowerCase}}/v1")
+@Tag(name = "{{.Description}} Command API", description = "{{.Table}}")
+public class {{.DomainUpperCase}}CommandController {
+
+    private final {{.DomainUpperCase}}CommandService commandService;
+
+    @Operation(summary = "{{.Description}} 생성", description = "{{.Description}} 생성을 위한 API 입니다.")
+    @PostMapping("/create")
+    public TpsResponse<?> create{{.DomainUpperCase}}(@RequestHeader("userId") String userId,
+                                                  @Valid @RequestBody {{.DomainUpperCase}}CreateRequest createRequest) {
+        commandService.create{{.DomainUpperCase}}(createRequest, userId);
+        return TpsResponse.success(null);
+    }
+
+    @Operation(summary = "{{.Description}} 수정", description = "{{.Description}} 수정을 위한 API 입니다.")
+    @PostMapping("/update")
+    public TpsResponse<?> update{{.DomainUpperCase}}(@RequestHeader("userId") String userId,
+                                                  @Valid @RequestBody {{.DomainUpperCase}}UpdateRequest updateRequest) {
+        commandService.update{{.DomainUpperCase}}(updateRequest, userId);
+        return TpsResponse.success(null);
+    }
+
+    @Operation(summary = "{{.Description}} 제거", description = "{{.Description}} 삭제를 위한 API 입니다.")
+    @PostMapping("/delete")
+    public TpsResponse<?> delete{{.DomainUpperCase}}(@RequestBody List<{{.DomainUpperCase}}SelectRequest> deleteRequests) {
+        commandService.delete{{.DomainUpperCase}}(deleteRequests);
+        return TpsResponse.success(null);
+    }
+}

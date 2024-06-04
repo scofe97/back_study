@@ -1,0 +1,6 @@
+{
+  "domain": "IntrfcPreInfoStng12",
+  "basePackage": "org.okestro.tps.api.",
+  "tableName": "TB_TPS_WK_027",
+  "description": "인터페이스사전정보"
+}

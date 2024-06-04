@@ -1,0 +1,22 @@
+package {{.InfrastructurePackage}}.dao;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import java.util.List;
+import {{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper;
+import {{.InfrastructurePackage}}.model.{{.ModelName}};
+
+@Service
+@RequiredArgsConstructor
+public class {{.ModelName}}QueryService {
+
+    private final {{.ModelName}}QueryMapper queryMapper;
+
+    public List<{{.ModelName}}> select{{.DomainUpperCase}}List() {
+        return queryMapper.select{{.DomainUpperCase}}List();
+    }
+
+    public {{.ModelName}} select{{.DomainUpperCase}}({{.ModelName}} selectModel) {
+        return queryMapper.select{{.DomainUpperCase}}();
+    }
+}
