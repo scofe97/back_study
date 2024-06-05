@@ -1,6 +1,4 @@
 {
-  "domain": "CompnDtlBsc",
-  "basePackage": "org.okestro.tps.api",
-  "tableName": "TB_TPS_WK_020",
-  "description": "컴포넌트기본"
+  "domain": "SltmPreInfoDtl",
+  "basePackage": "org.okestro.tps.api"
 }

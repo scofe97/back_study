@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="{{.InfrastructurePackage}}.mapper.{{.ModelName}}CommandMapper">
+
+    <insert id="create{{.DomainUpperCase}}"
+            parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
+        INSERT INTO {{.Table}} (
+              /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.create{{.DomainUpperCase}}*/
+            {{- range $index, $element := .Columns }}
+               {{- if $index }},{{ end }}
+               {{.Name}}
+            {{- end }}
+        ) VALUES (
+            {{- range $index, $element := .Columns }}
+               {{- if $index }},{{ end }}
+               #{{printf "{%s}" .LowerCaseName}}
+            {{- end }}
+        )
+    </insert>
+
+    <update id="update{{.DomainUpperCase}}"
+            parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
+        UPDATE {{.Table}}
+               /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.update{{.DomainUpperCase}}*/
+           SET {{- range $index, $element := .Columns }}
+               {{- if ne .Name (index $.PrimaryKey 0).Name }},{{ end }}
+               {{.Name}} = #{{printf "{%s}" .LowerCaseName}}
+               {{- end }}
+         WHERE {{- range $index, $element := .PrimaryKey }}
+               {{- if $index }} AND {{ end }}
+               {{.Name}} = #{{printf "{%s}" .LowerCaseName}}
+               {{- end }}
+    </update>
+
+    <delete id="delete{{.DomainUpperCase}}"
+            parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
+        DELETE /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.delete{{.DomainUpperCase}}*/
+          FROM {{.Table}}
+         WHERE {{- range $index, $element := .PrimaryKey }}
+               {{- if $index }} AND {{ end }}
+               {{.Name}} IN (
+               <foreach collection="list" index="index" item="item" separator=",">
+                  #{{printf "{item.%s}" .LowerCaseName}}
+               </foreach>
+               )
+               {{- end }}
+    </delete>
+</mapper>

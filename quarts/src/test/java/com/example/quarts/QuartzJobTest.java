@@ -1,6 +1,6 @@
 package com.example.quarts;
 
-import com.example.quarts.quarts.job.MyJob;
+import com.example.quarts.job.MyJob;
 import org.junit.jupiter.api.Test;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;

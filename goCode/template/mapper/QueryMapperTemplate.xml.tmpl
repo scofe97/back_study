@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="{{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper">
+
+    <!-- {{.ModelName}} 전체 리스트 조회 -->
+    <select id="select{{.DomainUpperCase}}List"
+            resultType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
+        SELECT /*{{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper.select{{.DomainUpperCase}}List*/
+            {{- range $index, $element := .Columns }}
+               {{- if $index }},{{ end }}
+               {{.Name}}
+            {{- end }}
+          FROM {{.Table}}
+    </select>
+
+    <!-- {{.ModelName}} 단일 조회 -->
+    <select id="select{{.DomainUpperCase}}Detail"
+            parameterType="{{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}SelectRequest"
+            resultType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
+        SELECT /*{{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper.select{{.DomainUpperCase}}Detail*/
+            {{- range $index, $element := .Columns }}
+               {{- if $index }},{{ end }}
+               {{.Name}}
+            {{- end }}
+          FROM {{.Table}}
+         WHERE {{- range $index, $element := .PrimaryKey }}
+               {{- if $index }}  AND {{ end }}
+               {{.Name}} = #{{printf "{%s}" .LowerCaseName}}
+               {{- end }}
+
+    </select>
+</mapper>

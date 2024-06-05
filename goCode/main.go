@@ -52,18 +52,20 @@ func main() {
 	createApplicationPackage := createPackage + "/application/" + lowerDomain
 	createDomainPackage := createPackage + "/domain/" + lowerDomain
 	createInfrastructurePackage := createPackage + "/infrastructure/persistence"
+	createMapperPackage := createPackage + "/mapper"
 
 	data := types.TemplateData{
 		PackageName:           basePackage,
 		ApplicationPackage:    generatorApplicationPackage,
 		DomainPackage:         generatorDomainPackage,
 		InfrastructurePackage: generatorInfrastructurePackage,
-		Table:                 configData.TableName,
+		Table:                 table.Name,
 		DomainUpperCase:       domain,
 		DomainLowerCase:       lowerDomain,
-		Description:           configData.Description,
+		Description:           table.Description,
 		ModelName:             util.ToCamelCase(table.Name),
 		Columns:               table.Columns,
+		PrimaryKey:            table.PrimaryKey,
 	}
 
 	// Define the templates and corresponding output paths
@@ -87,7 +89,11 @@ func main() {
 		"./template/infrastructure/CommandMapperTemplate.java.tmpl":  createInfrastructurePackage + "/mapper/" + data.ModelName + "CommandMapper.java",
 		"./template/infrastructure/QueryServiceTemplate.java.tmpl":   createInfrastructurePackage + "/dao/" + data.ModelName + "QueryService.java",
 		"./template/infrastructure/CommandServiceTemplate.java.tmpl": createInfrastructurePackage + "/dao/" + data.ModelName + "CommandService.java",
-		// "./template/infrastructure/ModelTemplate.java.tmpl":          createInfrastructurePackage + "/model/" + data.ModelName + ".java",
+		"./template/infrastructure/ModelTemplate.java.tmpl":          createInfrastructurePackage + "/model/" + data.ModelName + ".java",
+
+		// mapper
+		"./template/mapper/QueryMapperTemplate.xml.tmpl":   createMapperPackage + "/" + data.ModelName + "QueryMapper.xml",
+		"./template/mapper/CommandMapperTemplate.xml.tmpl": createMapperPackage + "/" + data.ModelName + "CommandMapper.xml",
 	}
 
 	// Create each file from the corresponding template

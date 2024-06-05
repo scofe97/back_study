@@ -3,21 +3,18 @@ package {{.ApplicationPackage}}.dto.response;
 import lombok.Builder;
 import {{.InfrastructurePackage}}.model.{{.ModelName}};
 
-import java.time.LocalDateTime;
-
 @Builder
 public record {{.DomainUpperCase}}Response(
-        LocalDateTime regDt,
-        String rgtrId,
-        LocalDateTime mdfcnDt,
-        String mdfrId
+    {{- range $index, $element := .Columns }}
+    {{ if $index }},{{ end }}
+    {{.Type}} {{.Name}}
+    {{end}}
 ) {
-    public static {{.DomainUpperCase}}Response from({{.ModelName}} {{.DomainLowerCase}}) {
+    public static {{.DomainUpperCase}}Response from({{.ModelName}} {{$.DomainLowerCase}}) {
         return {{.DomainUpperCase}}Response.builder()
-                .regDt({{.DomainLowerCase}}.getRegDt())
-                .rgtrId({{.DomainLowerCase}}.getRgtrId())
-                .mdfcnDt({{.DomainLowerCase}}.getMdfcnDt())
-                .mdfrId({{.DomainLowerCase}}.getMdfrId())
-                .build();
+            {{range .Columns}}
+            .{{.Name}}({{$.DomainLowerCase}}.get{{.UpperCaseName}}())
+            {{end}}
+            .build();
     }
 }
