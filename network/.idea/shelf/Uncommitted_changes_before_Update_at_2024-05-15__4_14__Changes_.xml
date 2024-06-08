@@ -1,0 +1,9 @@
+<changelist name="Uncommitted_changes_before_Update_at_2024-05-15_오후_4_14_[Changes]" date="1715757282618" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-05-15_오후_4_14_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2024-05-15 오후 4:14 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="../msa/section6/v2-spring-cloud-config/accounts/target/jib-image.tar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024-05-15_오후_4_14_[Changes]/jib-image.tar" />
+  </binary>
+</changelist>

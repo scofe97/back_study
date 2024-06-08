@@ -5,11 +5,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49b1e212-ec5e-49dc-a64f-b1b9c86780d7" name="Changes" comment="2024/04/03">
-      <change beforePath="$PROJECT_DIR$/../quarts/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../quarts/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quarts/.gradle/8.7/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../quarts/.gradle/8.7/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quarts/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../quarts/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quarts/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../quarts/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quarts/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/gradle_wrapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/gradle_wrapper1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/gradle_wrapper2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/libs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/libs1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/libs2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-mid2/java-mid2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/spring/study/SpringStudyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/SpringStudyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/spring/study/aop/AImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/aop/AImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/spring/study/aop/AInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/aop/AInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/spring/study/aop/BImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/aop/BImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/spring/study/aop/BInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/aop/BInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/spring/study/aop/TimeInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/aop/TimeInvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/spring/study/objectmapper/ObjectMapperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/objectmapper/ObjectMapperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/spring/study/objectmapper/dto/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/objectmapper/dto/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/test/java/com/example/spring/study/aop/TimeInvocationHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/test/java/com/example/spring/study/aop/TimeInvocationHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-study/src/test/java/com/example/spring/study/objectmapper/ObjectMapperServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/test/java/com/example/spring/study/objectmapper/ObjectMapperServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/PraticeApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/constants/AccountsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/constants/AccountsConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/constants/DispatcherType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/constants/DispatcherType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/controller/AccountsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/dto/AccountsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/dto/AccountsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/dto/CustomerDetailsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/dto/CustomerDetailsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/dto/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/dto/ErrorResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/dto/ErrorResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/dto/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/entity/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/entity/Accounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/exception/CustomerAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/exception/CustomerAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/filter/LogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/filter/LogFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/interceptor/LogInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/interceptor/LogInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/mapper/AccountsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/mapper/AccountsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/repository/AccountsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/repository/AccountsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/resolver/MyHandlerExceptionResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/resolver/MyHandlerExceptionResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/service/IAccountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/service/IAccountsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/java/com/example/pratice/service/impl/AccountsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-study/src/main/java/com/example/study/domain/service/impl/AccountsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springPratice/src/test/java/com/example/pratice/PraticeApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +89,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="msa" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="msa" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="msa" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -67,6 +109,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
@@ -80,28 +125,31 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build msa.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.msa [bootBuildImage].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MsaApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/simbohyeon/study/back_study/msa/test&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build msa.executor": "Run",
+    "Gradle.msa [bootBuildImage].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "Spring Boot.MsaApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/back_study/springtx",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test" />
@@ -144,13 +192,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-graalvm-jdk-21.0.2-f644763e9732-c0dbaf3a" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -161,6 +202,7 @@
       <updated>1706503899695</updated>
       <workItem from="1712129648018" duration="16453000" />
       <workItem from="1712310477568" duration="3269000" />
+      <workItem from="1717847613710" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="2024/04/03">
       <option name="closed" value="true" />
@@ -179,5 +221,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2024/04/03" />
     <option name="LAST_COMMIT_MESSAGE" value="2024/04/03" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

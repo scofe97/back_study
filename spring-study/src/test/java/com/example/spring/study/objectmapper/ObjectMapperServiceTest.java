@@ -1,6 +1,7 @@
 package com.example.spring.study.objectmapper;
 
-import com.example.spring.study.objectmapper.dto.Person;
+import com.example.study.objectmapper.ObjectMapperService;
+import com.example.study.objectmapper.dto.Person;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,9 +12,9 @@ import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@WebMvcTest(ObjectMapperService.class)
+@WebMvcTest(com.example.study.objectmapper.ObjectMapperService.class)
 class ObjectMapperServiceTest {
-    private ObjectMapperService objectMapperService;
+    private com.example.study.objectmapper.ObjectMapperService objectMapperService;
     private ObjectMapper objectMapper;
 
     @BeforeEach

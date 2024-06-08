@@ -1,5 +1,10 @@
 package com.example.spring.study.aop;
 
+import com.example.study.aop.AImpl;
+import com.example.study.aop.AInterface;
+import com.example.study.aop.BImpl;
+import com.example.study.aop.BInterface;
+import com.example.study.aop.TimeInvocationHandler;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Proxy;
@@ -9,11 +14,11 @@ class TimeInvocationHandlerTest {
 
     @Test
     void dynamicA(){
-        AInterface target = new AImpl();
-        TimeInvocationHandler handler = new TimeInvocationHandler(target);
+        com.example.study.aop.AInterface target = new AImpl();
+        com.example.study.aop.TimeInvocationHandler handler = new com.example.study.aop.TimeInvocationHandler(target);
 
         // 인터페이스 정보로 프록시 생성
-        AInterface proxy = (AInterface) Proxy.newProxyInstance(AInterface.class.getClassLoader(),
+        com.example.study.aop.AInterface proxy = (com.example.study.aop.AInterface) Proxy.newProxyInstance(com.example.study.aop.AInterface.class.getClassLoader(),
                 new Class[]{AInterface.class},
                 handler);
 
@@ -24,11 +29,11 @@ class TimeInvocationHandlerTest {
 
     @Test
     void dynamicB(){
-        BInterface target = new BImpl();
-        TimeInvocationHandler handler = new TimeInvocationHandler(target);
+        com.example.study.aop.BInterface target = new BImpl();
+        com.example.study.aop.TimeInvocationHandler handler = new TimeInvocationHandler(target);
 
         // 인터페이스 정보로 프록시 생성
-        BInterface proxy = (BInterface) Proxy.newProxyInstance(BInterface.class.getClassLoader(),
+        com.example.study.aop.BInterface proxy = (com.example.study.aop.BInterface) Proxy.newProxyInstance(com.example.study.aop.BInterface.class.getClassLoader(),
                 new Class[]{BInterface.class},
                 handler);
 
