@@ -1,0 +1,36 @@
+package {{.PackageName}}.impl;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import {{.ApplicationPackage}}.dto.response.{{.DomainUpperCase}}Response;
+import {{.DomainPackage}}.{{.DomainUpperCase}}QueryService;
+import {{.InfrastructurePackage}}.dao.{{.ModelName}}QueryService;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+
+import java.util.List;
+
+@Slf4j
+@Service
+@RequiredArgsConstructor
+public class {{.DomainUpperCase}}QueryServiceImpl implements {{.DomainUpperCase}}QueryService {
+
+    private final {{.ModelName}}QueryService queryService;
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<{{.DomainUpperCase}}Response> select{{.DomainUpperCase}}List() {
+        return queryService.select{{.DomainUpperCase}}List()
+                .stream()
+                .map({{.DomainUpperCase}}Response::from)
+                .toList();
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public {{.DomainUpperCase}}Response select{{.DomainUpperCase}}() {
+        return {{.DomainUpperCase}}Response
+                .from(queryService.select{{.DomainUpperCase}}());
+    }
+}
