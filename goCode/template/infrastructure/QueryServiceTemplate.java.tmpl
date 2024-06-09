@@ -3,8 +3,8 @@ package {{.PackageName}}.dao;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
-import {{.PackageName}}.mapper.{{.ModelName}}QueryMapper;
-import {{.PackageName}}.model.{{.ModelName}};
+import {{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper;
+import {{.InfrastructurePackage}}.model.{{.ModelName}};
 
 @Service
 @RequiredArgsConstructor
@@ -16,7 +16,7 @@ public class {{.ModelName}}QueryService {
         return queryMapper.select{{.DomainUpperCase}}List();
     }
 
-    public {{.ModelName}} select{{.DomainUpperCase}}() {
-        return queryMapper.select{{.DomainUpperCase}}();
+    public {{.ModelName}} select{{.DomainUpperCase}}({{.ModelName}} selectModel) {
+        return queryMapper.select{{.DomainUpperCase}}(selectModel);
     }
 }

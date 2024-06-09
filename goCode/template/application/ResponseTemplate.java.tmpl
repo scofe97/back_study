@@ -6,15 +6,15 @@ import {{.InfrastructurePackage}}.model.{{.ModelName}};
 @Builder
 public record {{.DomainUpperCase}}Response(
     {{- range $index, $element := .Columns }}
-    {{ if $index }},{{ end }}
-    {{.Type}} {{.Name}}
-    {{end}}
+        @Schema(description = "{{.Comment}}")
+        {{.Type}} {{.LowerCaseName}}{{if ne $index (lastIndex $.Columns)}},{{end}}
+    {{- end }}
 ) {
     public static {{.DomainUpperCase}}Response from({{.ModelName}} {{$.DomainLowerCase}}) {
         return {{.DomainUpperCase}}Response.builder()
-            {{range .Columns}}
-            .{{.Name}}({{$.DomainLowerCase}}.get{{.UpperCaseName}}())
-            {{end}}
+            {{- range .Columns }}
+            .{{.LowerCaseName}}({{$.DomainLowerCase}}.get{{.UpperCaseName}}())
+            {{- end }}
             .build();
     }
 }

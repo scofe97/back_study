@@ -7,5 +7,5 @@ import java.util.List;
 public interface {{.DomainUpperCase}}QueryService {
     List<{{.DomainUpperCase}}Response> select{{.DomainUpperCase}}List();
 
-    {{.DomainUpperCase}}Response select{{.DomainUpperCase}}();
+    {{.DomainUpperCase}}Response select{{.DomainUpperCase}}({{.DomainUpperCase}}SelectRequest selectRequest);
 }

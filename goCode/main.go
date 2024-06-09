@@ -65,7 +65,6 @@ func main() {
 		Description:           table.Description,
 		ModelName:             util.ToCamelCase(table.Name),
 		Columns:               table.Columns,
-		PrimaryKey:            table.PrimaryKey,
 	}
 
 	// Define the templates and corresponding output paths

@@ -5,15 +5,15 @@
     <insert id="create{{.DomainUpperCase}}"
             parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
         INSERT INTO {{.Table}} (
-              /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.create{{.DomainUpperCase}}*/
+                /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.create{{.DomainUpperCase}}*/
             {{- range $index, $element := .Columns }}
-               {{- if $index }},{{ end }}
-               {{.Name}}
+                {{- if $index }},{{ end }}
+                {{.Name}}
             {{- end }}
         ) VALUES (
             {{- range $index, $element := .Columns }}
-               {{- if $index }},{{ end }}
-               #{{printf "{%s}" .LowerCaseName}}
+                {{- if $index }},{{ end }}
+                #{{printf "{%s}" .LowerCaseName}}
             {{- end }}
         )
     </insert>
@@ -22,27 +22,43 @@
             parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
         UPDATE {{.Table}}
                /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.update{{.DomainUpperCase}}*/
-           SET {{- range $index, $element := .Columns }}
-               {{- if ne .Name (index $.PrimaryKey 0).Name }},{{ end }}
+           SET
+   {{- range $index, $element := .Columns }}
+       {{- if not $element.IsPrimaryKey }}
+           {{- if ne $index (lastIndex $.Columns) }}
+               {{.Name}} = #{{printf "{%s}" .LowerCaseName}},
+           {{- else }}
                {{.Name}} = #{{printf "{%s}" .LowerCaseName}}
+           {{- end }}
+       {{- end }}
+   {{- end }}
+         WHERE
+       {{- range $index, $element := .Columns }}
+           {{- if $element.IsPrimaryKey }}
+               {{- if ne $index 0 }}
+               AND
                {{- end }}
-         WHERE {{- range $index, $element := .PrimaryKey }}
-               {{- if $index }} AND {{ end }}
                {{.Name}} = #{{printf "{%s}" .LowerCaseName}}
-               {{- end }}
+           {{- end }}
+       {{- end }}
     </update>
 
     <delete id="delete{{.DomainUpperCase}}"
             parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
         DELETE /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.delete{{.DomainUpperCase}}*/
           FROM {{.Table}}
-         WHERE {{- range $index, $element := .PrimaryKey }}
-               {{- if $index }} AND {{ end }}
+         WHERE
+       {{- range $index, $element := .Columns }}
+           {{- if .IsPrimaryKey }}
+               {{- if ne $index 0 }}
+               AND
+               {{- end }}
                {{.Name}} IN (
                <foreach collection="list" index="index" item="item" separator=",">
                   #{{printf "{item.%s}" .LowerCaseName}}
                </foreach>
                )
-               {{- end }}
+           {{- end }}
+       {{- end }}
     </delete>
 </mapper>

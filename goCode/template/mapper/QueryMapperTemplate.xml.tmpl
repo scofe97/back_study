@@ -23,10 +23,12 @@
                {{.Name}}
             {{- end }}
           FROM {{.Table}}
-         WHERE {{- range $index, $element := .PrimaryKey }}
-               {{- if $index }}  AND {{ end }}
+         WHERE
+       {{- range $index, $element := .Columns }}
+           {{- if .IsPrimaryKey }}
+               {{- if $index }} AND {{ end }}
                {{.Name}} = #{{printf "{%s}" .LowerCaseName}}
-               {{- end }}
-
+           {{- end }}
+       {{- end }}
     </select>
 </mapper>

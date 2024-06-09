@@ -1,13 +1,43 @@
 package {{.ApplicationPackage}}.dto.request;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
 import {{.InfrastructurePackage}}.model.{{.ModelName}};
 
 @Builder
 public record {{.DomainUpperCase}}SelectRequest(
+    {{- range $index, $element := .Columns }}
+        {{- if .IsPrimaryKey}}
+        @Schema(description = "{{.Comment}}")
+        @NotBlank(message = "{field.notBlank}")
+        {{.Type}} {{.LowerCaseName}} {{if ne $index (primaryKeyCount $.Columns)}},{{end}}
+        {{- end}}
+    {{- end}}
 ) {
+    public static {{.DomainUpperCase}}SelectRequest from(
+        {{- range $index, $element := .Columns }}
+            {{- if $element.IsPrimaryKey}}
+            {{- if $index }}, {{ end }}{{ $element.Type }} {{ $element.LowerCaseName }}
+            {{- end}}
+        {{- end}}
+    ) {
+        return {{.DomainUpperCase}}SelectRequest.builder()
+                {{- range .Columns}}
+                    {{- if .IsPrimaryKey}}
+                    .{{.LowerCaseName}}({{.LowerCaseName}})
+                    {{- end}}
+                {{- end}}
+                .build();
+    }
+
     public {{.ModelName}} toModel() {
         return {{.ModelName}}.builder()
+                {{- range .Columns}}
+                {{- if .IsPrimaryKey}}
+                .{{.LowerCaseName}}(this.{{.LowerCaseName}})
+                {{- end}}
+                {{- end}}
                 .build();
     }
 }

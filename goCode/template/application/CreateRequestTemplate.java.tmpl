@@ -1,15 +1,30 @@
 package {{.ApplicationPackage}}.dto.request;
 
-import lombok.Builder;
+import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import {{.InfrastructurePackage}}.model.{{.ModelName}};
 
-@Builder
 public record {{.DomainUpperCase}}CreateRequest(
+    {{- range $index, $element := .Columns}}
+        {{- if not .IsPrimaryKey}}
+        @Schema(description = "{{.Comment}}")
+        {{- if eq .Type "String"}}
+        @NotBlank(message = "{field.notBlank}")
+        {{- else }}
+        @NotNull(message = "{field.notNull}")
+        {{- end }}
+        {{.Type}} {{.LowerCaseName}}{{if ne $index (lastIndex $.Columns)}},{{end}}
+        {{- end}}
+    {{- end}}
 ) {
     public {{.ModelName}} toModel(String userId) {
         return {{.ModelName}}.builder()
-                .rgtrId(userId)
-                .mdfrId(userId)
+            {{- range $index, $element := .Columns}}
+                {{- if not .IsPrimaryKey}}
+                .{{.LowerCaseName}}(this.{{.LowerCaseName}})
+                {{- end}}
+            {{- end}}
                 .build();
     }
 }

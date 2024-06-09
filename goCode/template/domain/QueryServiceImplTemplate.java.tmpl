@@ -29,8 +29,8 @@ public class {{.DomainUpperCase}}QueryServiceImpl implements {{.DomainUpperCase}
 
     @Override
     @Transactional(readOnly = true)
-    public {{.DomainUpperCase}}Response select{{.DomainUpperCase}}() {
+    public {{.DomainUpperCase}}Response select{{.DomainUpperCase}}({{.DomainUpperCase}}SelectRequest selectRequest) {
         return {{.DomainUpperCase}}Response
-                .from(queryService.select{{.DomainUpperCase}}());
+                .from(queryService.select{{.DomainUpperCase}}(selectRequest.toModel()));
     }
 }

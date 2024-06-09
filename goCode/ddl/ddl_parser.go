@@ -43,30 +43,27 @@ func ParseDDL(ddl string) types.Table {
 
 	// Table 생성
 	var table types.Table
+	var primaryKeyColumns []string
+
 	for _, line := range lines {
 		line = strings.TrimSpace(line) // 양 끝의 공백제거
 
 		if strings.HasPrefix(line, "create table") {
-			// CREATE TABLE이 있는 경우, table.name 초기화
+			// CREATE TABLE로 시작하는 경우
 			table.Name = strings.Fields(line)[2]
 
 		} else if strings.HasPrefix(line, "comment") {
-			// comment가 있는 경우 테이블의 한글이름으로 판단한다.
-			table.Description = strings.Trim(strings.Split(line, "")[1], "")
+			// comment로 시작하는 경우
+			commentParts := strings.SplitN(line, "comment", 2)
+			if len(commentParts) > 1 {
+				table.Description = strings.TrimSpace(commentParts[1])
+				table.Description = strings.Trim(table.Description, "';")
+			}
 
 		} else if strings.HasPrefix(line, "PRIMARY KEY") {
 			// PRIMARY KEY가 있는경우 PK값이라고 판단한다.
 			primaryKeyLine := strings.Trim(strings.Split(line, "(")[1], ")")
-			primaryKeys := strings.Split(primaryKeyLine, ",")
-			for _, key := range primaryKeys {
-				columnName := strings.TrimSpace(key)
-				column := types.Column{
-					Name:          columnName,
-					LowerCaseName: util.LowerCaseFirstLetter(util.ToCamelCase(columnName)),
-					UpperCaseName: util.UpperCaseFirstLetter(util.ToCamelCase(columnName)),
-				}
-				table.PrimaryKey = append(table.PrimaryKey, column)
-			}
+			primaryKeyColumns = strings.Split(primaryKeyLine, ",")
 
 		} else if strings.HasPrefix(line, "(") || strings.HasPrefix(line, ")") || line == "" {
 			// "(", ")", ""의 경우 넘어간다.
@@ -78,16 +75,37 @@ func ParseDDL(ddl string) types.Table {
 			parts := strings.Fields(line)
 			columnName := strings.TrimRight(parts[0], ",")
 
+			// 컬럼 주석 추출
+			var comment string
+			if strings.Contains(line, "comment") {
+				commentParts := strings.SplitN(line, "comment", 2)
+				comment = strings.TrimSpace(commentParts[1])
+				comment = strings.TrimRight(comment, ",") // 쉼표 제거
+				comment = strings.Trim(comment, "'")
+			}
+
+			// 컬럼 타입 추출
+			columnType := mapType(parts[1])
+
 			// 컬럼 이름 추출
 			column := types.Column{
 				Name:          columnName,
 				UpperCaseName: util.UpperCaseFirstLetter(util.ToCamelCase(columnName)),
 				LowerCaseName: util.LowerCaseFirstLetter(util.ToCamelCase(columnName)),
-				Type:          mapType(parts[1]),
+				Type:          columnType,
+				Comment:       comment,
 			}
 			table.Columns = append(table.Columns, column)
 		}
 	}
+
+	// PRIMARY KEY 설정
+	for i, column := range table.Columns {
+		if contains(primaryKeyColumns, column.Name) {
+			table.Columns[i].IsPrimaryKey = true
+		}
+	}
+
 	return table
 }
 
@@ -103,4 +121,14 @@ func mapType(sqlType string) string {
 	default:
 		return "String"
 	}
+}
+
+// contains checks if a slice contains a specific element
+func contains(slice []string, item string) bool {
+	for _, element := range slice {
+		if strings.TrimSpace(element) == item {
+			return true
+		}
+	}
+	return false
 }

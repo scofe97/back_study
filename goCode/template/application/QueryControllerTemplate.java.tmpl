@@ -32,9 +32,20 @@ public class {{.DomainUpperCase}}QueryController {
 
 
     @Operation(summary = "{{.Description}} 단건 조회", description = "{{.Description}}의 특정 데이터를 가져오는 API입니다.")
-    @GetMapping("/select/{id}")
-    public TpsResponse<?> select{{.DomainUpperCase}}(@PathVariable String id) {
+    @GetMapping("/select/{{range $index, $element := .Columns}}{{if .IsPrimaryKey}}/{{printf "{%s}" $element.LowerCaseName}}{{end}}{{end}}")
+    public TpsResponse<?> select{{.DomainUpperCase}}(
+        {{- range $index, $element := .Columns}}
+        {{- if .IsPrimaryKey -}}
+        @PathVariable("{{$element.LowerCaseName}}") {{.Type}} {{.LowerCaseName}}{{if ne $index (primaryKeyCount $.Columns)}},{{end}}
+        {{- end -}}
+        {{- end}}
+    ) {
         {{.DomainUpperCase}}SelectRequest selectRequest = {{.DomainUpperCase}}SelectRequest.builder()
+            {{- range .Columns}}
+            {{- if .IsPrimaryKey -}}
+            .{{.LowerCaseName}}({{.LowerCaseName}})
+            {{- end}}
+            {{- end}}
             .build();
         {{.DomainUpperCase}}Response response = queryService.select{{.DomainUpperCase}}(selectRequest);
         return TpsResponse.success(response);

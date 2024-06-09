@@ -16,8 +16,14 @@ func CreateFileFromTemplate(templatePath, outputPath string, data types.Template
 		return err
 	}
 
+	funcMap := template.FuncMap{
+		"lastIndex":       lastIndex,
+		"primaryKeyCount": primaryKeyCount,
+		"len":             func(slice []types.Column) int { return len(slice) },
+	}
+
 	// Parse the template file
-	tmpl, err := template.ParseFiles(templatePath)
+	tmpl, err := template.New(filepath.Base(templatePath)).Funcs(funcMap).ParseFiles(templatePath)
 	if err != nil {
 		return err
 	}
@@ -36,4 +42,20 @@ func CreateFileFromTemplate(templatePath, outputPath string, data types.Template
 	}
 
 	return nil
+}
+
+// lastIndex returns the last index of a slice
+func lastIndex(slice []types.Column) int {
+	return len(slice) - 1
+}
+
+// primaryKeyCount returns the count of primary keys in a slice
+func primaryKeyCount(columns []types.Column) int {
+	count := 0
+	for _, col := range columns {
+		if col.IsPrimaryKey {
+			count++
+		}
+	}
+	return count - 1
 }

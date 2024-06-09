@@ -11,14 +11,11 @@ type TemplateData struct {
 	Description           string
 	ModelName             string
 	Columns               []Column
-	PrimaryKey            []Column
 }
 
-// Table represents a SQL table
 type Table struct {
 	Name        string
 	Description string
-	PrimaryKey  []Column
 	Columns     []Column
 }
 
@@ -28,6 +25,8 @@ type Column struct {
 	UpperCaseName string
 	LowerCaseName string
 	Type          string
+	Comment       string
+	IsPrimaryKey  bool
 }
 
 // Config holds the configuration data to be read from the external file
