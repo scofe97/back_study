@@ -32,11 +32,15 @@ public class SltmPreInfoDtlQueryController {
 
 
     @Operation(summary = "결재사전정보상세 단건 조회", description = "결재사전정보상세의 특정 데이터를 가져오는 API입니다.")
-    @GetMapping("/select//{compnSn}")
-    public TpsResponse<?> selectSltmPreInfoDtl(@PathVariable("compnSn") Integer compnSn
+    @GetMapping("/select//{compnSn}/{stepNm}")
+    public TpsResponse<?> selectSltmPreInfoDtl(
+            @PathVariable("compnSn") Integer compnSn,
+            @PathVariable("stepNm") String stepNm
     ) {
-        SltmPreInfoDtlSelectRequest selectRequest = SltmPreInfoDtlSelectRequest.builder().compnSn(compnSn)
-            .build();
+        SltmPreInfoDtlSelectRequest selectRequest = SltmPreInfoDtlSelectRequest.builder()
+                                                            .compnSn(compnSn)
+                                                            .stepNm(stepNm)
+                                                            .build();
         SltmPreInfoDtlResponse response = queryService.selectSltmPreInfoDtl(selectRequest);
         return TpsResponse.success(response);
     }

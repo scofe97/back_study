@@ -17,9 +17,12 @@ func CreateFileFromTemplate(templatePath, outputPath string, data types.Template
 	}
 
 	funcMap := template.FuncMap{
-		"lastIndex":       lastIndex,
-		"primaryKeyCount": primaryKeyCount,
-		"len":             func(slice []types.Column) int { return len(slice) },
+		"lastIndex":               lastIndex,
+		"lastPrimaryKeyIndex":     lastPrimaryKeyIndex,
+		"firstPrimaryKeyIndex":    firstPrimaryKeyIndex,
+		"firstNonPrimaryKeyIndex": firstNonPrimaryKeyIndex,
+		"lastNonPrimaryKeyIndex":  lastNonPrimaryKeyIndex,
+		"len":                     func(slice []types.Column) int { return len(slice) },
 	}
 
 	// Parse the template file
@@ -49,13 +52,43 @@ func lastIndex(slice []types.Column) int {
 	return len(slice) - 1
 }
 
-// primaryKeyCount returns the count of primary keys in a slice
-func primaryKeyCount(columns []types.Column) int {
-	count := 0
-	for _, col := range columns {
+func lastPrimaryKeyIndex(columns []types.Column) int {
+	lastIndex := -1
+	for i, col := range columns {
 		if col.IsPrimaryKey {
-			count++
+			lastIndex = i
 		}
 	}
-	return count - 1
+	return lastIndex
+}
+
+func firstPrimaryKeyIndex(columns []types.Column) int {
+	firstIndex := -1
+	for i, col := range columns {
+		if col.IsPrimaryKey {
+			if firstIndex == -1 {
+				firstIndex = i
+			}
+		}
+	}
+	return firstIndex
+}
+
+func firstNonPrimaryKeyIndex(columns []types.Column) int {
+	for i, col := range columns {
+		if !col.IsPrimaryKey {
+			return i
+		}
+	}
+	return -1 // No non-primary key found
+}
+
+func lastNonPrimaryKeyIndex(columns []types.Column) int {
+	lastIndex := -1
+	for i, col := range columns {
+		if !col.IsPrimaryKey {
+			lastIndex = i
+		}
+	}
+	return lastIndex
 }

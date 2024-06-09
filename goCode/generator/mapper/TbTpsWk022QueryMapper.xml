@@ -6,16 +6,16 @@
     <select id="selectSltmPreInfoDtlList"
             resultType="org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk022">
         SELECT /*org.okestro.tps.api.infrastructure.persistence.mapper.TbTpsWk022QueryMapper.selectSltmPreInfoDtlList*/
-               COMPN_SN,
-               STEP_NM,
-               TASK_AUTHRT_USE_YN,
-               TASK_AUTHRT_CD,
-               APRVR_ID,
-               APRVR_REL_CD,
-               REG_DT,
-               RGTR_ID,
-               MDFCN_DT,
-               MDFR_ID
+               COMPN_SN
+             , STEP_NM
+             , TASK_AUTHRT_USE_YN
+             , TASK_AUTHRT_CD
+             , APRVR_ID
+             , APRVR_REL_CD
+             , REG_DT
+             , RGTR_ID
+             , MDFCN_DT
+             , MDFR_ID
           FROM TB_TPS_WK_022
     </select>
 
@@ -24,18 +24,19 @@
             parameterType="org.okestro.tps.api.application.sltmPreInfoDtl.dto.request.SltmPreInfoDtlSelectRequest"
             resultType="org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk022">
         SELECT /*org.okestro.tps.api.infrastructure.persistence.mapper.TbTpsWk022QueryMapper.selectSltmPreInfoDtlDetail*/
-               COMPN_SN,
-               STEP_NM,
-               TASK_AUTHRT_USE_YN,
-               TASK_AUTHRT_CD,
-               APRVR_ID,
-               APRVR_REL_CD,
-               REG_DT,
-               RGTR_ID,
-               MDFCN_DT,
-               MDFR_ID
+               COMPN_SN
+             , STEP_NM
+             , TASK_AUTHRT_USE_YN
+             , TASK_AUTHRT_CD
+             , APRVR_ID
+             , APRVR_REL_CD
+             , REG_DT
+             , RGTR_ID
+             , MDFCN_DT
+             , MDFR_ID
           FROM TB_TPS_WK_022
          WHERE
-               COMPN_SN = #{compnSn}
+               COMPN_SN = #{compnSn} AND 
+               STEP_NM = #{stepNm}
     </select>
 </mapper>

@@ -9,33 +9,43 @@ public record SltmPreInfoDtlUpdateRequest(
         @Schema(description = "콤포넌트일련번호")
         @NotNull(message = "{field.notNull}")
         Integer compnSn,
+    
         @Schema(description = "단계명")
         @NotBlank(message = "{field.notBlank}")
         String stepNm,
+    
         @Schema(description = "업무권한사용여부")
         @NotBlank(message = "{field.notBlank}")
         String taskAuthrtUseYn,
+    
         @Schema(description = "업무권한코드")
         @NotBlank(message = "{field.notBlank}")
         String taskAuthrtCd,
+    
         @Schema(description = "결재자아이디")
         @NotBlank(message = "{field.notBlank}")
         String aprvrId,
+    
         @Schema(description = "결재자관계코드")
         @NotBlank(message = "{field.notBlank}")
         String aprvrRelCd,
+    
         @Schema(description = "등록일시")
         @NotNull(message = "{field.notNull}")
         LocalDateTime regDt,
+    
         @Schema(description = "등록자아이디")
         @NotBlank(message = "{field.notBlank}")
         String rgtrId,
+    
         @Schema(description = "수정일시")
         @NotNull(message = "{field.notNull}")
         LocalDateTime mdfcnDt,
+    
         @Schema(description = "수정자아이디")
         @NotBlank(message = "{field.notBlank}")
         String mdfrId
+    
 ) {
     public TbTpsWk022 toModel(String userId) {
         return TbTpsWk022.builder()

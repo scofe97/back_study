@@ -35,18 +35,18 @@ public class {{.DomainUpperCase}}QueryController {
     @GetMapping("/select/{{range $index, $element := .Columns}}{{if .IsPrimaryKey}}/{{printf "{%s}" $element.LowerCaseName}}{{end}}{{end}}")
     public TpsResponse<?> select{{.DomainUpperCase}}(
         {{- range $index, $element := .Columns}}
-        {{- if .IsPrimaryKey -}}
-        @PathVariable("{{$element.LowerCaseName}}") {{.Type}} {{.LowerCaseName}}{{if ne $index (primaryKeyCount $.Columns)}},{{end}}
-        {{- end -}}
+        {{- if .IsPrimaryKey}}
+            @PathVariable("{{$element.LowerCaseName}}") {{.Type}} {{.LowerCaseName}}{{if ne $index (lastPrimaryKeyIndex $.Columns)}},{{end}}
+        {{- end}}
         {{- end}}
     ) {
         {{.DomainUpperCase}}SelectRequest selectRequest = {{.DomainUpperCase}}SelectRequest.builder()
-            {{- range .Columns}}
-            {{- if .IsPrimaryKey -}}
-            .{{.LowerCaseName}}({{.LowerCaseName}})
-            {{- end}}
-            {{- end}}
-            .build();
+                                                            {{- range .Columns}}
+                                                            {{- if .IsPrimaryKey}}
+                                                            .{{.LowerCaseName}}({{.LowerCaseName}})
+                                                            {{- end}}
+                                                            {{- end}}
+                                                            .build();
         {{.DomainUpperCase}}Response response = queryService.select{{.DomainUpperCase}}(selectRequest);
         return TpsResponse.success(response);
     }

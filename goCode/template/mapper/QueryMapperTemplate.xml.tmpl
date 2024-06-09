@@ -7,8 +7,7 @@
             resultType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
         SELECT /*{{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper.select{{.DomainUpperCase}}List*/
             {{- range $index, $element := .Columns }}
-               {{- if $index }},{{ end }}
-               {{.Name}}
+             {{ if $index }}, {{ else }}  {{ end }}{{- .Name}}
             {{- end }}
           FROM {{.Table}}
     </select>
@@ -19,8 +18,7 @@
             resultType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
         SELECT /*{{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper.select{{.DomainUpperCase}}Detail*/
             {{- range $index, $element := .Columns }}
-               {{- if $index }},{{ end }}
-               {{.Name}}
+             {{ if $index }}, {{ else }}  {{ end }}{{- .Name}}
             {{- end }}
           FROM {{.Table}}
          WHERE

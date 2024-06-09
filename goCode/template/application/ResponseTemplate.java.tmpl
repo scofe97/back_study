@@ -7,8 +7,8 @@ import {{.InfrastructurePackage}}.model.{{.ModelName}};
 public record {{.DomainUpperCase}}Response(
     {{- range $index, $element := .Columns }}
         @Schema(description = "{{.Comment}}")
-        {{.Type}} {{.LowerCaseName}}{{if ne $index (lastIndex $.Columns)}},{{end}}
-    {{- end }}
+        {{.Type}} {{.LowerCaseName}}{{if ne $index (lastIndex $.Columns)}},{{- end}}
+    {{ end }}
 ) {
     public static {{.DomainUpperCase}}Response from({{.ModelName}} {{$.DomainLowerCase}}) {
         return {{.DomainUpperCase}}Response.builder()

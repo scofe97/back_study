@@ -16,18 +16,22 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class SltmPreInfoDtlCommandServiceImpl implements SltmPreInfoDtlCommandService {
+
     private final TbTpsWk022CommandService commandService;
 
+    @Override
     @Transactional
     public void createSltmPreInfoDtl(SltmPreInfoDtlCreateRequest createRequest, String userId) {
         commandService.createSltmPreInfoDtl(createRequest.toModel(userId));
     }
 
+    @Override
     @Transactional
     public void updateSltmPreInfoDtl(SltmPreInfoDtlUpdateRequest updateRequest, String userId) {
         commandService.updateSltmPreInfoDtl(updateRequest.toModel(userId));
     }
 
+    @Override
     @Transactional
     public void deleteSltmPreInfoDtl(List<SltmPreInfoDtlSelectRequest> deleteRequests) {
         commandService.deleteSltmPreInfoDtl(deleteRequests.stream()

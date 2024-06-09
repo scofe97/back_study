@@ -7,8 +7,7 @@
         INSERT INTO {{.Table}} (
                 /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.create{{.DomainUpperCase}}*/
             {{- range $index, $element := .Columns }}
-                {{- if $index }},{{ end }}
-                {{.Name}}
+              {{ if $index }}, {{ else }}  {{ end }}{{- .Name}}
             {{- end }}
         ) VALUES (
             {{- range $index, $element := .Columns }}
@@ -25,20 +24,13 @@
            SET
    {{- range $index, $element := .Columns }}
        {{- if not $element.IsPrimaryKey }}
-           {{- if ne $index (lastIndex $.Columns) }}
-               {{.Name}} = #{{printf "{%s}" .LowerCaseName}},
-           {{- else }}
-               {{.Name}} = #{{printf "{%s}" .LowerCaseName}}
-           {{- end }}
+             {{ if ne $index  (firstNonPrimaryKeyIndex $.Columns)}}, {{ else }}  {{ end }}{{.Name}} = #{{printf "{%s}" .LowerCaseName}}
        {{- end }}
    {{- end }}
          WHERE
        {{- range $index, $element := .Columns }}
            {{- if $element.IsPrimaryKey }}
-               {{- if ne $index 0 }}
-               AND
-               {{- end }}
-               {{.Name}} = #{{printf "{%s}" .LowerCaseName}}
+           {{ if ne $index  (firstPrimaryKeyIndex $.Columns)}}AND {{ else }}    {{ end }}{{.Name}} = #{{printf "{%s}" .LowerCaseName}}
            {{- end }}
        {{- end }}
     </update>

@@ -11,22 +11,22 @@ public record {{.DomainUpperCase}}SelectRequest(
         {{- if .IsPrimaryKey}}
         @Schema(description = "{{.Comment}}")
         @NotBlank(message = "{field.notBlank}")
-        {{.Type}} {{.LowerCaseName}} {{if ne $index (primaryKeyCount $.Columns)}},{{end}}
-        {{- end}}
+        {{.Type}} {{.LowerCaseName}}{{if ne $index (lastPrimaryKeyIndex $.Columns)}},{{- end}}
+        {{end}}
     {{- end}}
 ) {
     public static {{.DomainUpperCase}}SelectRequest from(
-        {{- range $index, $element := .Columns }}
-            {{- if $element.IsPrimaryKey}}
-            {{- if $index }}, {{ end }}{{ $element.Type }} {{ $element.LowerCaseName }}
-            {{- end}}
+    {{- range $index, $element := .Columns }}
+        {{- if $element.IsPrimaryKey}}
+        {{ $element.Type }} {{ $element.LowerCaseName }}{{if ne $index (lastPrimaryKeyIndex $.Columns)}},{{end}}
         {{- end}}
+    {{- end}}
     ) {
         return {{.DomainUpperCase}}SelectRequest.builder()
                 {{- range .Columns}}
-                    {{- if .IsPrimaryKey}}
-                    .{{.LowerCaseName}}({{.LowerCaseName}})
-                    {{- end}}
+                {{- if .IsPrimaryKey}}
+                .{{.LowerCaseName}}({{.LowerCaseName}})
+                {{- end}}
                 {{- end}}
                 .build();
     }
