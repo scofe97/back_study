@@ -19,7 +19,6 @@ type Table struct {
 	Columns     []Column
 }
 
-// Column represents a column in a SQL table
 type Column struct {
 	Name          string
 	UpperCaseName string
@@ -27,6 +26,8 @@ type Column struct {
 	Type          string
 	Comment       string
 	IsPrimaryKey  bool
+	IsDefault     bool
+	IsNull        bool
 }
 
 // Config holds the configuration data to be read from the external file

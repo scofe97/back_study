@@ -84,6 +84,27 @@ func ParseDDL(ddl string) types.Table {
 				comment = strings.Trim(comment, "'")
 			}
 
+			// default 여부 확인
+			var isDefault bool
+			for _, part := range parts {
+				if part == "default" {
+					isDefault = true
+					break
+				}
+			}
+
+			// null 여부 확인
+			var isNull bool
+			for _, part := range parts {
+				if part == "null" {
+					isNull = true
+				}
+				if part == "not" {
+					isNull = false
+					break
+				}
+			}
+
 			// 컬럼 타입 추출
 			columnType := mapType(parts[1])
 
@@ -94,6 +115,8 @@ func ParseDDL(ddl string) types.Table {
 				LowerCaseName: util.LowerCaseFirstLetter(util.ToCamelCase(columnName)),
 				Type:          columnType,
 				Comment:       comment,
+				IsDefault:     isDefault,
+				IsNull:        isNull,
 			}
 			table.Columns = append(table.Columns, column)
 		}

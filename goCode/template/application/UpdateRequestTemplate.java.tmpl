@@ -5,21 +5,25 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import {{.InfrastructurePackage}}.model.{{.ModelName}};
 
+import java.time.LocalDateTime;
+
 public record {{.DomainUpperCase}}UpdateRequest(
     {{- range $index, $element := .Columns}}
+        {{- if not (or (eq .Name "REG_DT") (eq .Name "RGTR_ID") (eq .Name "MDFCN_DT") (eq .Name "MDFR_ID")) }}
         @Schema(description = "{{.Comment}}")
-        {{- if eq .Type "String"}}
-        @NotBlank(message = "{field.notBlank}")
-        {{- else }}
-        @NotNull(message = "{field.notNull}")
-        {{- end }}
         {{.Type}} {{.LowerCaseName}}{{if ne $index (lastIndex $.Columns)}},{{- end}}
-    {{end}}
+        {{ end }}
+    {{- end }}
 ) {
     public {{.ModelName}} toModel(String userId) {
         return {{.ModelName}}.builder()
                 {{- range .Columns}}
+                {{- if (or (eq .Name "REG_DT") (eq .Name "MDFCN_DT") (eq .Name "RGTR_ID")) }}
+                {{- else if (or (eq .Name "MDFR_ID")) }}
+                .{{.LowerCaseName}}(userId)
+                {{- else }}
                 .{{.LowerCaseName}}(this.{{.LowerCaseName}})
+                {{- end}}
                 {{- end}}
                 .build();
     }

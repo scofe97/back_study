@@ -1,4 +1,4 @@
 {
-  "domain": "SltmPreInfoDtl",
+  "domain": "SltmDtl",
   "basePackage": "org.okestro.tps.api"
 }

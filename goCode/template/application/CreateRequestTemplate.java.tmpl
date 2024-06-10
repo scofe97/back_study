@@ -5,23 +5,23 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import {{.InfrastructurePackage}}.model.{{.ModelName}};
 
+import java.time.LocalDateTime;
+
 public record {{.DomainUpperCase}}CreateRequest(
     {{- range $index, $element := .Columns}}
-        {{- if not .IsPrimaryKey}}
+        {{- if not (or (eq .Name "RGTR_ID") (eq .Name "MDFR_ID") (.IsDefault)) }}
         @Schema(description = "{{.Comment}}")
-        {{- if eq .Type "String"}}
-        @NotBlank(message = "{field.notBlank}")
-        {{- else }}
-        @NotNull(message = "{field.notNull}")
-        {{- end }}
         {{.Type}} {{.LowerCaseName}}{{if ne $index (lastIndex $.Columns)}},{{- end}}
-        {{end}}
+        {{ end}}
     {{- end}}
 ) {
     public {{.ModelName}} toModel(String userId) {
         return {{.ModelName}}.builder()
             {{- range $index, $element := .Columns}}
-                {{- if not .IsPrimaryKey}}
+                {{- if .IsDefault }}
+                {{- else if (or (eq .Name "RGTR_ID") (eq .Name "MDFR_ID")) }}
+                .{{.LowerCaseName}}(userId)
+                {{- else }}
                 .{{.LowerCaseName}}(this.{{.LowerCaseName}})
                 {{- end}}
             {{- end}}

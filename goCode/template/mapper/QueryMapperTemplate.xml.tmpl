@@ -13,7 +13,7 @@
     </select>
 
     <!-- {{.ModelName}} 단일 조회 -->
-    <select id="select{{.DomainUpperCase}}Detail"
+    <select id="select{{.DomainUpperCase}}"
             parameterType="{{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}SelectRequest"
             resultType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
         SELECT /*{{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper.select{{.DomainUpperCase}}Detail*/

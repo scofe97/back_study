@@ -6,9 +6,9 @@ import org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk022;
 
 @Mapper
 public interface TbTpsWk022CommandMapper {
-    void createSltmPreInfoDtl(TbTpsWk022 createModel);
+    void createSltmDtl(TbTpsWk022 createModel);
 
-    void updateSltmPreInfoDtl(TbTpsWk022 updateModel);
+    void updateSltmDtl(TbTpsWk022 updateModel);
 
-    void deleteSltmPreInfoDtl(List<TbTpsWk022> deleteModelList);
+    void deleteSltmDtl(List<TbTpsWk022> deleteModelList);
 }

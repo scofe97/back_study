@@ -1,7 +1,10 @@
 package {{.ApplicationPackage}}.dto.response;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import {{.InfrastructurePackage}}.model.{{.ModelName}};
+
+import java.time.LocalDateTime;
 
 @Builder
 public record {{.DomainUpperCase}}Response(

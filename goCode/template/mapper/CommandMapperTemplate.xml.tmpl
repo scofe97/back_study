@@ -7,12 +7,17 @@
         INSERT INTO {{.Table}} (
                 /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.create{{.DomainUpperCase}}*/
             {{- range $index, $element := .Columns }}
+              {{- if .IsDefault }}
+              {{- else }}
               {{ if $index }}, {{ else }}  {{ end }}{{- .Name}}
+              {{- end }}
             {{- end }}
         ) VALUES (
             {{- range $index, $element := .Columns }}
-                {{- if $index }},{{ end }}
-                #{{printf "{%s}" .LowerCaseName}}
+                {{- if .IsDefault }}
+                {{- else }}
+              {{ if $index }}, {{ else }}  {{ end }}#{{printf "{%s}" .LowerCaseName}}
+                {{- end }}
             {{- end }}
         )
     </insert>
@@ -23,8 +28,10 @@
                /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.update{{.DomainUpperCase}}*/
            SET
    {{- range $index, $element := .Columns }}
-       {{- if not $element.IsPrimaryKey }}
+       {{- if (or ($element.IsPrimaryKey) (eq .Name "REG_DT") (eq .Name "RGTR_ID")) }}
+       {{- else }}
              {{ if ne $index  (firstNonPrimaryKeyIndex $.Columns)}}, {{ else }}  {{ end }}{{.Name}} = #{{printf "{%s}" .LowerCaseName}}
+
        {{- end }}
    {{- end }}
          WHERE
@@ -39,18 +46,30 @@
             parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
         DELETE /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.delete{{.DomainUpperCase}}*/
           FROM {{.Table}}
-         WHERE
+         WHERE (
+
        {{- range $index, $element := .Columns }}
-           {{- if .IsPrimaryKey }}
-               {{- if ne $index 0 }}
-               AND
+           {{- if $element.IsPrimaryKey }}
+               {{- if ne $index (lastPrimaryKeyIndex $.Columns) }}
+               {{- .Name }},
+               {{- else }}
+               {{- .Name }}
                {{- end }}
-               {{.Name}} IN (
+           {{- end }}
+       {{- end }}) IN (
                <foreach collection="list" index="index" item="item" separator=",">
-                  #{{printf "{item.%s}" .LowerCaseName}}
+               (
+               {{- range $index, $element := .Columns }}
+                  {{- if $element.IsPrimaryKey }}
+                  {{- if ne $index (lastPrimaryKeyIndex $.Columns) }}
+                  #{{- printf "{item.%s}" .LowerCaseName -}},
+                  {{- else }}
+                  #{{- printf "{item.%s}" .LowerCaseName -}}
+                  {{- end }}
+                  {{- end }}
+               {{- end }}
+               )
                </foreach>
                )
-           {{- end }}
-       {{- end }}
     </delete>
 </mapper>

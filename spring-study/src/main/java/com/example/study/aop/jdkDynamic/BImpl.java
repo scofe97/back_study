@@ -1,4 +1,4 @@
-package com.example.study.aop;
+package com.example.study.aop.jdkDynamic;
 
 import lombok.extern.slf4j.Slf4j;
 

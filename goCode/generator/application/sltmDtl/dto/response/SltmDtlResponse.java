@@ -1,10 +1,13 @@
-package org.okestro.tps.api.application.sltmPreInfoDtl.dto.response;
+package org.okestro.tps.api.application.sltmDtl.dto.response;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk022;
 
+import java.time.LocalDateTime;
+
 @Builder
-public record SltmPreInfoDtlResponse(
+public record SltmDtlResponse(
         @Schema(description = "콤포넌트일련번호")
         Integer compnSn,
     
@@ -36,18 +39,18 @@ public record SltmPreInfoDtlResponse(
         String mdfrId
     
 ) {
-    public static SltmPreInfoDtlResponse from(TbTpsWk022 sltmPreInfoDtl) {
-        return SltmPreInfoDtlResponse.builder()
-            .compnSn(sltmPreInfoDtl.getCompnSn())
-            .stepNm(sltmPreInfoDtl.getStepNm())
-            .taskAuthrtUseYn(sltmPreInfoDtl.getTaskAuthrtUseYn())
-            .taskAuthrtCd(sltmPreInfoDtl.getTaskAuthrtCd())
-            .aprvrId(sltmPreInfoDtl.getAprvrId())
-            .aprvrRelCd(sltmPreInfoDtl.getAprvrRelCd())
-            .regDt(sltmPreInfoDtl.getRegDt())
-            .rgtrId(sltmPreInfoDtl.getRgtrId())
-            .mdfcnDt(sltmPreInfoDtl.getMdfcnDt())
-            .mdfrId(sltmPreInfoDtl.getMdfrId())
+    public static SltmDtlResponse from(TbTpsWk022 sltmDtl) {
+        return SltmDtlResponse.builder()
+            .compnSn(sltmDtl.getCompnSn())
+            .stepNm(sltmDtl.getStepNm())
+            .taskAuthrtUseYn(sltmDtl.getTaskAuthrtUseYn())
+            .taskAuthrtCd(sltmDtl.getTaskAuthrtCd())
+            .aprvrId(sltmDtl.getAprvrId())
+            .aprvrRelCd(sltmDtl.getAprvrRelCd())
+            .regDt(sltmDtl.getRegDt())
+            .rgtrId(sltmDtl.getRgtrId())
+            .mdfcnDt(sltmDtl.getMdfcnDt())
+            .mdfrId(sltmDtl.getMdfrId())
             .build();
     }
 }

@@ -10,6 +10,6 @@ create table TB_TPS_WK_022
     RGTR_ID            varchar(10)                            not null comment '등록자아이디',
     MDFCN_DT           datetime   default current_timestamp() not null comment '수정일시',
     MDFR_ID            varchar(10)                            not null comment '수정자아이디',
-    PRIMARY KEY (COMPN_SN, STEP_NM)
+    PRIMARY KEY (COMPN_SN)
 )
     comment '결재사전정보상세';

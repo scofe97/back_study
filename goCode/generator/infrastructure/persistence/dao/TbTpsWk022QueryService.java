@@ -12,11 +12,11 @@ public class TbTpsWk022QueryService {
 
     private final TbTpsWk022QueryMapper queryMapper;
 
-    public List<TbTpsWk022> selectSltmPreInfoDtlList() {
-        return queryMapper.selectSltmPreInfoDtlList();
+    public List<TbTpsWk022> selectSltmDtlList() {
+        return queryMapper.selectSltmDtlList();
     }
 
-    public TbTpsWk022 selectSltmPreInfoDtl(TbTpsWk022 selectModel) {
-        return queryMapper.selectSltmPreInfoDtl(selectModel);
+    public TbTpsWk022 selectSltmDtl(TbTpsWk022 selectModel) {
+        return queryMapper.selectSltmDtl(selectModel);
     }
 }
