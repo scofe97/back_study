@@ -1,10 +1,14 @@
 package com.example.spring.study.aop;
 
+import com.example.study.aop.TimeAdvice;
 import com.example.study.aop.jdkDynamic.*;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
+import org.springframework.aop.framework.ProxyFactory;
 
 import java.lang.reflect.Proxy;
 
+@Slf4j
 class TimeInvocationHandlerTest {
 
     @Test
@@ -68,5 +72,20 @@ class TimeInvocationHandlerTest {
         proxy.call();
         proxy.sum(1, 2);
         proxy.print();
+    }
+
+    @Test
+    void advice(){
+        AInterface target = new AImpl();
+        ProxyFactory proxyFactory = new ProxyFactory(target);
+        proxyFactory.addAdvice(new TimeAdvice());
+
+        proxyFactory.setProxyTargetClass(true); // 무조건 CGLIB 사용
+
+        AInterface proxy = (AInterface) proxyFactory.getProxy();
+        proxy.call();
+
+        log.info("targetClass={}", target.getClass());
+        log.info("proxyClass={}", proxy.getClass());
     }
 }

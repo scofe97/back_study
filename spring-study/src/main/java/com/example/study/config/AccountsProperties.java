@@ -1,7 +1,6 @@
 package com.example.study.config;
 
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
@@ -32,7 +31,7 @@ public class AccountsProperties {
         @NotEmpty(message = "이름을 입력해야 합니다")
         private final String name;
 
-        @Email(message = "유효한 이메일을 입력해야 합니다")
+        // @Email(message = "유효한 이메일을 입력해야 합니다")
         @NotEmpty(message = "이메일을 입력해야 합니다")
         private final String email;
     }
