@@ -3,9 +3,9 @@
 <mapper namespace="org.okestro.tps.api.infrastructure.persistence.mapper.TbTpsWk022QueryMapper">
 
     <!-- TbTpsWk022 전체 리스트 조회 -->
-    <select id="selectSltmPreInfoDtlList"
+    <select id="selectSltmCompnDtlList"
             resultType="org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk022">
-        SELECT /*org.okestro.tps.api.infrastructure.persistence.mapper.TbTpsWk022QueryMapper.selectSltmPreInfoDtlList*/
+        SELECT /*org.okestro.tps.api.infrastructure.persistence.mapper.TbTpsWk022QueryMapper.selectSltmCompnDtlList*/
                COMPN_SN
              , STEP_NM
              , TASK_AUTHRT_USE_YN
@@ -20,10 +20,10 @@
     </select>
 
     <!-- TbTpsWk022 단일 조회 -->
-    <select id="selectSltmPreInfoDtlDetail"
-            parameterType="org.okestro.tps.api.application.sltmPreInfoDtl.dto.request.SltmPreInfoDtlSelectRequest"
+    <select id="selectSltmCompnDtl"
+            parameterType="org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk022">
             resultType="org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk022">
-        SELECT /*org.okestro.tps.api.infrastructure.persistence.mapper.TbTpsWk022QueryMapper.selectSltmPreInfoDtlDetail*/
+        SELECT /*org.okestro.tps.api.infrastructure.persistence.mapper.TbTpsWk022QueryMapper.selectSltmCompnDtlDetail*/
                COMPN_SN
              , STEP_NM
              , TASK_AUTHRT_USE_YN
@@ -36,7 +36,6 @@
              , MDFR_ID
           FROM TB_TPS_WK_022
          WHERE
-               COMPN_SN = #{compnSn} AND 
-               STEP_NM = #{stepNm}
+               COMPN_SN = #{compnSn}
     </select>
 </mapper>

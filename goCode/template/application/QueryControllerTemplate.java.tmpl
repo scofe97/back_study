@@ -32,7 +32,7 @@ public class {{.DomainUpperCase}}QueryController {
 
 
     @Operation(summary = "{{.Description}} 단건 조회", description = "{{.Description}}의 특정 데이터를 가져오는 API입니다.")
-    @GetMapping("/select/{{range $index, $element := .Columns}}{{if .IsPrimaryKey}}/{{printf "{%s}" $element.LowerCaseName}}{{end}}{{end}}")
+    @GetMapping("/select{{range $index, $element := .Columns}}{{if .IsPrimaryKey}}/{{printf "{%s}" $element.LowerCaseName}}{{end}}{{end}}")
     public TpsResponse<?> select{{.DomainUpperCase}}(
         {{- range $index, $element := .Columns}}
         {{- if .IsPrimaryKey}}

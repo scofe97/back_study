@@ -12,15 +12,15 @@ public class TbTpsWk022CommandService {
 
     private final TbTpsWk022CommandMapper commandMapper;
 
-    public void createSltmDtl(TbTpsWk022 createModel) {
-        commandMapper.createSltmDtl(createModel);
+    public void createSltmCompnDtl(TbTpsWk022 createModel) {
+        commandMapper.createSltmCompnDtl(createModel);
     }
 
-    public void updateSltmDtl(TbTpsWk022 updateModel) {
-        commandMapper.updateSltmDtl(updateModel);
+    public void updateSltmCompnDtl(TbTpsWk022 updateModel) {
+        commandMapper.updateSltmCompnDtl(updateModel);
     }
 
-    public void deleteSltmDtl(List<TbTpsWk022> deleteModels) {
-        commandMapper.deleteSltmDtl(deleteModels);
+    public void deleteSltmCompnDtl(List<TbTpsWk022> deleteModels) {
+        commandMapper.deleteSltmCompnDtl(deleteModels);
     }
 }

@@ -6,7 +6,7 @@ import org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk022;
 
 @Mapper
 public interface TbTpsWk022QueryMapper {
-    List<TbTpsWk022> selectSltmDtlList();
+    List<TbTpsWk022> selectSltmCompnDtlList();
 
-    TbTpsWk022 selectSltmDtl(TbTpsWk022 selectModel);
+    TbTpsWk022 selectSltmCompnDtl(TbTpsWk022 selectModel);
 }

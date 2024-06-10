@@ -1,4 +1,4 @@
-package org.okestro.tps.api.application.sltmDtl.dto.request;
+package org.okestro.tps.api.application.sltmCompnDtl.dto.request;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
@@ -6,16 +6,16 @@ import lombok.Builder;
 import org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk022;
 
 @Builder
-public record SltmDtlSelectRequest(
+public record SltmCompnDtlSelectRequest(
         @Schema(description = "콤포넌트일련번호")
         @NotBlank(message = "{field.notBlank}")
         Integer compnSn
         
 ) {
-    public static SltmDtlSelectRequest from(
+    public static SltmCompnDtlSelectRequest from(
         Integer compnSn
     ) {
-        return SltmDtlSelectRequest.builder()
+        return SltmCompnDtlSelectRequest.builder()
                 .compnSn(compnSn)
                 .build();
     }

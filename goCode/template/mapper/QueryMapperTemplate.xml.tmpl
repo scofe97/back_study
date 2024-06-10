@@ -14,7 +14,7 @@
 
     <!-- {{.ModelName}} 단일 조회 -->
     <select id="select{{.DomainUpperCase}}"
-            parameterType="{{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}SelectRequest"
+            parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}"
             resultType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
         SELECT /*{{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper.select{{.DomainUpperCase}}Detail*/
             {{- range $index, $element := .Columns }}
