@@ -1,4 +1,4 @@
-package com.example.spring.study.aop;
+package com.example.study.aop;
 
 import com.example.study.aop.cglib.MyProxyInterceptor;
 import com.example.study.aop.cglib.Subject;

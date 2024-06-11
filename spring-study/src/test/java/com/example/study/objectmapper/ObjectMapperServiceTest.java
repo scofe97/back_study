@@ -1,4 +1,4 @@
-package com.example.spring.study.objectmapper;
+package com.example.study.objectmapper;
 
 import com.example.study.objectmapper.ObjectMapperService;
 import com.example.study.objectmapper.dto.Person;

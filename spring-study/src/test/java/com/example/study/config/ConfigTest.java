@@ -1,4 +1,4 @@
-package com.example.spring.study.config;
+package com.example.study.config;
 
 import com.example.study.SpringStudyApplication;
 import com.example.study.config.AccountsProperties;
