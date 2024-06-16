@@ -4,10 +4,10 @@ spring:
       on-profile: "prod"
 
 build:
-  version: "1.5"
+  version: "1.7"
 
 accounts:
-  message: "Welcome to EazyBank accounts related prodBus3344556666 APIs 55"
+  message: "Welcome to EazyBank accounts related prodBus3344556666 APIs 77"
   contactDetails:
     name: "Reine Aishwarya - Product Owner"
     email: "aishwarya@eazybank.com"
