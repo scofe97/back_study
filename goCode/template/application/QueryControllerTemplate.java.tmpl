@@ -21,7 +21,7 @@ import java.util.List;
 @RequestMapping("/{{.DomainLowerCase}}/v1")
 @Tag(name = "{{.Description}} Query API", description = "{{.Table}}")
 public class {{.DomainUpperCase}}QueryController {
-    private final {{.DomainUpperCase}}QueryService queryService;
+    private final {{.DomainUpperCase}}QueryService {{.DomainLowerCase}}QueryService;
 
     @Operation(summary = "{{.Description}} 리스트 조회", description = "{{.Description}}의 전체 데이터를 가져오는 API입니다.")
     @GetMapping("/select")

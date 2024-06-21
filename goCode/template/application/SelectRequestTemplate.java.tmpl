@@ -3,7 +3,7 @@ package {{.ApplicationPackage}}.dto.request;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
-import {{.InfrastructurePackage}}.model.{{.ModelName}};
+import {{.InfrastructurePackage}}.model.{{.ModelUpperCase}};
 
 @Builder
 public record {{.DomainUpperCase}}SelectRequest(
@@ -31,8 +31,8 @@ public record {{.DomainUpperCase}}SelectRequest(
                 .build();
     }
 
-    public {{.ModelName}} toModel() {
-        return {{.ModelName}}.builder()
+    public {{.ModelUpperCase}} toModel() {
+        return {{.ModelUpperCase}}.builder()
                 {{- range .Columns}}
                 {{- if .IsPrimaryKey}}
                 .{{.LowerCaseName}}(this.{{.LowerCaseName}})

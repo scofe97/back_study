@@ -63,7 +63,8 @@ func main() {
 		DomainUpperCase:       domain,
 		DomainLowerCase:       lowerDomain,
 		Description:           table.Description,
-		ModelName:             util.ToCamelCase(table.Name),
+		ModelUpperCase:        util.UpperCaseFirstLetter(util.ToCamelCase(table.Name)),
+		ModelLowerCase:        util.LowerCaseFirstLetter(util.ToCamelCase(table.Name)),
 		Columns:               table.Columns,
 	}
 
@@ -84,15 +85,15 @@ func main() {
 		"./template/domain/QueryServiceTemplate.java.tmpl":       createDomainPackage + "/" + data.DomainUpperCase + "QueryService.java",
 
 		// infrastructure
-		"./template/infrastructure/QueryMapperTemplate.java.tmpl":    createInfrastructurePackage + "/mapper/" + data.ModelName + "QueryMapper.java",
-		"./template/infrastructure/CommandMapperTemplate.java.tmpl":  createInfrastructurePackage + "/mapper/" + data.ModelName + "CommandMapper.java",
-		"./template/infrastructure/QueryServiceTemplate.java.tmpl":   createInfrastructurePackage + "/dao/" + data.ModelName + "QueryService.java",
-		"./template/infrastructure/CommandServiceTemplate.java.tmpl": createInfrastructurePackage + "/dao/" + data.ModelName + "CommandService.java",
-		"./template/infrastructure/ModelTemplate.java.tmpl":          createInfrastructurePackage + "/model/" + data.ModelName + ".java",
+		"./template/infrastructure/QueryMapperTemplate.java.tmpl":    createInfrastructurePackage + "/mapper/" + data.ModelUpperCase + "QueryMapper.java",
+		"./template/infrastructure/CommandMapperTemplate.java.tmpl":  createInfrastructurePackage + "/mapper/" + data.ModelUpperCase + "CommandMapper.java",
+		"./template/infrastructure/QueryServiceTemplate.java.tmpl":   createInfrastructurePackage + "/dao/" + data.ModelUpperCase + "QueryService.java",
+		"./template/infrastructure/CommandServiceTemplate.java.tmpl": createInfrastructurePackage + "/dao/" + data.ModelUpperCase + "CommandService.java",
+		"./template/infrastructure/ModelTemplate.java.tmpl":          createInfrastructurePackage + "/model/" + data.ModelUpperCase + ".java",
 
 		// mapper
-		"./template/mapper/QueryMapperTemplate.xml.tmpl":   createMapperPackage + "/" + data.ModelName + "QueryMapper.xml",
-		"./template/mapper/CommandMapperTemplate.xml.tmpl": createMapperPackage + "/" + data.ModelName + "CommandMapper.xml",
+		"./template/mapper/QueryMapperTemplate.xml.tmpl":   createMapperPackage + "/" + data.ModelUpperCase + "QueryMapper.xml",
+		"./template/mapper/CommandMapperTemplate.xml.tmpl": createMapperPackage + "/" + data.ModelUpperCase + "CommandMapper.xml",
 	}
 
 	// Create each file from the corresponding template

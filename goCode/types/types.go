@@ -9,7 +9,8 @@ type TemplateData struct {
 	DomainUpperCase       string
 	DomainLowerCase       string
 	Description           string
-	ModelName             string
+	ModelUpperCase        string
+	ModelLowerCase        string
 	Columns               []Column
 }
 

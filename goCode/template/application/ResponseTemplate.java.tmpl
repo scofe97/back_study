@@ -2,7 +2,7 @@ package {{.ApplicationPackage}}.dto.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
-import {{.InfrastructurePackage}}.model.{{.ModelName}};
+import {{.InfrastructurePackage}}.model.{{.ModelUpperCase}};
 
 import java.time.LocalDateTime;
 
@@ -13,10 +13,10 @@ public record {{.DomainUpperCase}}Response(
         {{.Type}} {{.LowerCaseName}}{{if ne $index (lastIndex $.Columns)}},{{- end}}
     {{ end }}
 ) {
-    public static {{.DomainUpperCase}}Response from({{.ModelName}} {{$.DomainLowerCase}}) {
+    public static {{.DomainUpperCase}}Response from({{.ModelUpperCase}} {{$.ModelLowerCase}}) {
         return {{.DomainUpperCase}}Response.builder()
             {{- range .Columns }}
-            .{{.LowerCaseName}}({{$.DomainLowerCase}}.get{{.UpperCaseName}}())
+            .{{.LowerCaseName}}({{$.ModelLowerCase}}.get{{.UpperCaseName}}())
             {{- end }}
             .build();
     }

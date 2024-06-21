@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="{{.InfrastructurePackage}}.mapper.{{.ModelName}}CommandMapper">
+<mapper namespace="{{.InfrastructurePackage}}.mapper.{{.ModelUpperCase}}CommandMapper">
 
+    <!-- {{.ModelUpperCase}} 생성 -->
     <insert id="create{{.DomainUpperCase}}"
-            parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
+            parameterType="{{.InfrastructurePackage}}.model.{{.ModelUpperCase}}">
         INSERT INTO {{.Table}} (
-                /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.create{{.DomainUpperCase}}*/
+                /*{{.InfrastructurePackage}}.repository.{{.ModelUpperCase}}CommandMapper.create{{.DomainUpperCase}}*/
             {{- range $index, $element := .Columns }}
               {{- if .IsDefault }}
               {{- else }}
@@ -22,10 +23,11 @@
         )
     </insert>
 
+    <!-- {{.ModelUpperCase}} 수정 -->
     <update id="update{{.DomainUpperCase}}"
-            parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
+            parameterType="{{.InfrastructurePackage}}.model.{{.ModelUpperCase}}">
         UPDATE {{.Table}}
-               /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.update{{.DomainUpperCase}}*/
+               /*{{.InfrastructurePackage}}.repository.{{.ModelUpperCase}}CommandMapper.update{{.DomainUpperCase}}*/
            SET
    {{- range $index, $element := .Columns }}
        {{- if (or ($element.IsPrimaryKey) (eq .Name "REG_DT") (eq .Name "RGTR_ID")) }}
@@ -42,9 +44,10 @@
        {{- end }}
     </update>
 
+    <!-- {{.ModelUpperCase}} 다중 삭제 -->
     <delete id="delete{{.DomainUpperCase}}"
-            parameterType="{{.InfrastructurePackage}}.model.{{.ModelName}}">
-        DELETE /*{{.InfrastructurePackage}}.repository.{{.ModelName}}CommandMapper.delete{{.DomainUpperCase}}*/
+            parameterType="{{.InfrastructurePackage}}.model.{{.ModelUpperCase}}">
+        DELETE /*{{.InfrastructurePackage}}.repository.{{.ModelUpperCase}}CommandMapper.delete{{.DomainUpperCase}}*/
           FROM {{.Table}}
          WHERE (
 

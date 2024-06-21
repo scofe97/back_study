@@ -60,7 +60,7 @@ func ParseDDL(ddl string) types.Table {
 				table.Description = strings.Trim(table.Description, "';")
 			}
 
-		} else if strings.HasPrefix(line, "PRIMARY KEY") {
+		} else if strings.HasPrefix(line, "primary key") {
 			// PRIMARY KEY가 있는경우 PK값이라고 판단한다.
 			primaryKeyLine := strings.Trim(strings.Split(line, "(")[1], ")")
 			primaryKeyColumns = strings.Split(primaryKeyLine, ",")

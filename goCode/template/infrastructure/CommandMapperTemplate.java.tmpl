@@ -2,13 +2,13 @@ package {{.PackageName}}.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
-import {{.InfrastructurePackage}}.model.{{.ModelName}};
+import {{.InfrastructurePackage}}.model.{{.ModelUpperCase}};
 
 @Mapper
-public interface {{.ModelName}}CommandMapper {
-    void create{{.DomainUpperCase}}({{.ModelName}} createModel);
+public interface {{.ModelUpperCase}}CommandMapper {
+    void create{{.DomainUpperCase}}({{.ModelUpperCase}} createModel);
 
-    void update{{.DomainUpperCase}}({{.ModelName}} updateModel);
+    void update{{.DomainUpperCase}}({{.ModelUpperCase}} updateModel);
 
-    void delete{{.DomainUpperCase}}(List<{{.ModelName}}> deleteModelList);
+    void delete{{.DomainUpperCase}}(List<{{.ModelUpperCase}}> deleteModelList);
 }

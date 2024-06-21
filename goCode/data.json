@@ -1,4 +1,5 @@
 {
-  "domain": "SltmCompnDtl",
+  "domain": "TcktRepoInfo",
   "basePackage": "org.okestro.tps.api"
 }
+

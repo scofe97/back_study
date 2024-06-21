@@ -2,11 +2,11 @@ package {{.PackageName}}.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
-import {{.InfrastructurePackage}}.model.{{.ModelName}};
+import {{.InfrastructurePackage}}.model.{{.ModelUpperCase}};
 
 @Mapper
-public interface {{.ModelName}}QueryMapper {
-    List<{{.ModelName}}> select{{.DomainUpperCase}}List();
+public interface {{.ModelUpperCase}}QueryMapper {
+    List<{{.ModelUpperCase}}> select{{.DomainUpperCase}}List();
 
-    {{.ModelName}} select{{.DomainUpperCase}}({{.ModelName}} selectModel);
+    Optional<{{.ModelUpperCase}}> select{{.DomainUpperCase}}({{.ModelUpperCase}} selectModel);
 }

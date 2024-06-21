@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import {{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}SelectRequest;
 import {{.ApplicationPackage}}.dto.response.{{.DomainUpperCase}}Response;
 import {{.DomainPackage}}.{{.DomainUpperCase}}QueryService;
-import {{.InfrastructurePackage}}.dao.{{.ModelName}}QueryService;
+import {{.InfrastructurePackage}}.dao.{{.ModelUpperCase}}QueryService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,12 +17,12 @@ import java.util.List;
 @RequiredArgsConstructor
 public class {{.DomainUpperCase}}QueryServiceImpl implements {{.DomainUpperCase}}QueryService {
 
-    private final {{.ModelName}}QueryService queryService;
+    private final {{.ModelUpperCase}}QueryService {{.ModelLowerCase}}QueryService;
 
     @Override
     @Transactional(readOnly = true)
     public List<{{.DomainUpperCase}}Response> select{{.DomainUpperCase}}List() {
-        return queryService.select{{.DomainUpperCase}}List()
+        return {{.ModelLowerCase}}QueryService.select{{.DomainUpperCase}}List()
                 .stream()
                 .map({{.DomainUpperCase}}Response::from)
                 .toList();
@@ -32,6 +32,6 @@ public class {{.DomainUpperCase}}QueryServiceImpl implements {{.DomainUpperCase}
     @Transactional(readOnly = true)
     public {{.DomainUpperCase}}Response select{{.DomainUpperCase}}({{.DomainUpperCase}}SelectRequest selectRequest) {
         return {{.DomainUpperCase}}Response
-                .from(queryService.select{{.DomainUpperCase}}(selectRequest.toModel()));
+                .from({{.ModelLowerCase}}QueryService.select{{.DomainUpperCase}}(selectRequest.toModel()));
     }
 }

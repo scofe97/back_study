@@ -3,7 +3,7 @@ package {{.ApplicationPackage}}.dto.request;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import {{.InfrastructurePackage}}.model.{{.ModelName}};
+import {{.InfrastructurePackage}}.model.{{.ModelUpperCase}};
 
 import java.time.LocalDateTime;
 
@@ -15,8 +15,8 @@ public record {{.DomainUpperCase}}CreateRequest(
         {{ end}}
     {{- end}}
 ) {
-    public {{.ModelName}} toModel(String userId) {
-        return {{.ModelName}}.builder()
+    public {{.ModelUpperCase}} toModel(String userId) {
+        return {{.ModelUpperCase}}.builder()
             {{- range $index, $element := .Columns}}
                 {{- if .IsDefault }}
                 {{- else if (or (eq .Name "RGTR_ID") (eq .Name "MDFR_ID")) }}

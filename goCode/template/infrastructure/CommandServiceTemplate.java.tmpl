@@ -3,24 +3,28 @@ package {{.PackageName}}.dao;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
-import {{.InfrastructurePackage}}.mapper.{{.ModelName}}CommandMapper;
-import {{.InfrastructurePackage}}.model.{{.ModelName}};
+import {{.InfrastructurePackage}}.mapper.{{.ModelUpperCase}}CommandMapper;
+import {{.InfrastructurePackage}}.model.{{.ModelUpperCase}};
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
-public class {{.ModelName}}CommandService {
+public class {{.ModelUpperCase}}CommandService {
 
-    private final {{.ModelName}}CommandMapper commandMapper;
+    private final {{.ModelUpperCase}}CommandMapper {{.ModelLowerCase}}CommandMapper;
 
-    public void create{{.DomainUpperCase}}({{.ModelName}} createModel) {
-        commandMapper.create{{.DomainUpperCase}}(createModel);
+    @Transactional
+    public void create{{.DomainUpperCase}}({{.ModelUpperCase}} createModel) {
+        {{.ModelLowerCase}}CommandMapper.create{{.DomainUpperCase}}(createModel);
     }
 
-    public void update{{.DomainUpperCase}}({{.ModelName}} updateModel) {
-        commandMapper.update{{.DomainUpperCase}}(updateModel);
+    @Transactional
+    public void update{{.DomainUpperCase}}({{.ModelUpperCase}} updateModel) {
+        {{.ModelLowerCase}}CommandMapper.update{{.DomainUpperCase}}(updateModel);
     }
 
-    public void delete{{.DomainUpperCase}}(List<{{.ModelName}}> deleteModels) {
-        commandMapper.delete{{.DomainUpperCase}}(deleteModels);
+    @Transactional
+    public void delete{{.DomainUpperCase}}(List<{{.ModelUpperCase}}> deleteModels) {
+        {{.ModelLowerCase}}CommandMapper.delete{{.DomainUpperCase}}(deleteModels);
     }
 }

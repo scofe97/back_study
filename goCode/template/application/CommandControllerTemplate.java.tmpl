@@ -21,7 +21,7 @@ import java.util.List;
 @Tag(name = "{{.Description}} Command API", description = "{{.Table}}")
 public class {{.DomainUpperCase}}CommandController {
 
-    private final {{.DomainUpperCase}}CommandService commandService;
+    private final {{.DomainUpperCase}}CommandService {{.DomainLowerCase}}CommandService;
 
     @Operation(summary = "{{.Description}} 생성", description = "{{.Description}} 생성을 위한 API 입니다.")
     @PostMapping("/create")

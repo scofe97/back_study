@@ -3,20 +3,24 @@ package {{.PackageName}}.dao;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
-import {{.InfrastructurePackage}}.mapper.{{.ModelName}}QueryMapper;
-import {{.InfrastructurePackage}}.model.{{.ModelName}};
+import {{.InfrastructurePackage}}.mapper.{{.ModelUpperCase}}QueryMapper;
+import {{.InfrastructurePackage}}.model.{{.ModelUpperCase}};
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
-public class {{.ModelName}}QueryService {
+public class {{.ModelUpperCase}}QueryService {
 
-    private final {{.ModelName}}QueryMapper queryMapper;
+    private final {{.ModelUpperCase}}QueryMapper {{.ModelLowerCase}}QueryMapper;
 
-    public List<{{.ModelName}}> select{{.DomainUpperCase}}List() {
-        return queryMapper.select{{.DomainUpperCase}}List();
+    @Transactional(readOnly = true)
+    public List<{{.ModelUpperCase}}> select{{.DomainUpperCase}}List() {
+        return {{.ModelLowerCase}}QueryMapper.select{{.DomainUpperCase}}List();
     }
 
-    public {{.ModelName}} select{{.DomainUpperCase}}({{.ModelName}} selectModel) {
-        return queryMapper.select{{.DomainUpperCase}}(selectModel);
+    @Transactional(readOnly = true)
+    public {{.ModelUpperCase}} select{{.DomainUpperCase}}({{.ModelUpperCase}} selectModel) {
+        return {{.ModelLowerCase}}QueryMapper.select{{.DomainUpperCase}}(selectModel)
+                .orElseThrow(() -> new TpsException(ErrorCodeGeneral.DATA_NOT_FOUND));
     }
 }
