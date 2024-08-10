@@ -26,7 +26,7 @@ public class {{.DomainUpperCase}}QueryController {
     @Operation(summary = "{{.Description}} 리스트 조회", description = "{{.Description}}의 전체 데이터를 가져오는 API입니다.")
     @GetMapping("/select")
     public TpsResponse<?> select{{.DomainUpperCase}}List() {
-        List<{{.DomainUpperCase}}Response> responseList = queryService.select{{.DomainUpperCase}}List();
+        List<{{.DomainUpperCase}}Response> responseList = {{.DomainUpperCase}}QueryService {{.DomainLowerCase}}QueryService.select{{.DomainUpperCase}}List();
         return TpsResponse.success(responseList);
     }
 
@@ -47,7 +47,7 @@ public class {{.DomainUpperCase}}QueryController {
                                                             {{- end}}
                                                             {{- end}}
                                                             .build();
-        {{.DomainUpperCase}}Response response = queryService.select{{.DomainUpperCase}}(selectRequest);
+        {{.DomainUpperCase}}Response response = {{.DomainUpperCase}}QueryService {{.DomainLowerCase}}QueryService.select{{.DomainUpperCase}}(selectRequest);
         return TpsResponse.success(response);
     }
 }
