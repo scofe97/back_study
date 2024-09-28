@@ -9,7 +9,7 @@ import {{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}CreateRequest;
 import {{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}SelectRequest;
 import {{.ApplicationPackage}}.dto.request.{{.DomainUpperCase}}UpdateRequest;
 import {{.DomainPackage}}.{{.DomainUpperCase}}CommandService;
-import org.okestro.tps.common_lib.message.TpsResponse;
+import org.okestro.tps.core.dto.TpsResponse;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,7 +27,7 @@ public class {{.DomainUpperCase}}CommandController {
     @PostMapping("/create")
     public TpsResponse<?> create{{.DomainUpperCase}}(@RequestHeader("userId") String userId,
                                                   @Valid @RequestBody {{.DomainUpperCase}}CreateRequest createRequest) {
-        commandService.create{{.DomainUpperCase}}(createRequest, userId);
+        {{.DomainLowerCase}}CommandService.create{{.DomainUpperCase}}(createRequest, userId);
         return TpsResponse.success(null);
     }
 
@@ -35,14 +35,14 @@ public class {{.DomainUpperCase}}CommandController {
     @PostMapping("/update")
     public TpsResponse<?> update{{.DomainUpperCase}}(@RequestHeader("userId") String userId,
                                                   @Valid @RequestBody {{.DomainUpperCase}}UpdateRequest updateRequest) {
-        commandService.update{{.DomainUpperCase}}(updateRequest, userId);
+        {{.DomainLowerCase}}CommandService.update{{.DomainUpperCase}}(updateRequest, userId);
         return TpsResponse.success(null);
     }
 
     @Operation(summary = "{{.Description}} 제거", description = "{{.Description}} 삭제를 위한 API 입니다.")
     @PostMapping("/delete")
     public TpsResponse<?> delete{{.DomainUpperCase}}(@RequestBody List<{{.DomainUpperCase}}SelectRequest> deleteRequests) {
-        commandService.delete{{.DomainUpperCase}}(deleteRequests);
+        {{.DomainLowerCase}}CommandService.delete{{.DomainUpperCase}}(deleteRequests);
         return TpsResponse.success(null);
     }
 }

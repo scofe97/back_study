@@ -1,6 +1,8 @@
 package {{.PackageName}}.dao;
 
 import lombok.RequiredArgsConstructor;
+import org.okestro.tps.core.message.exception.ErrorCodeGeneral;
+import org.okestro.tps.core.message.exception.TpsException;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import {{.InfrastructurePackage}}.mapper.{{.ModelUpperCase}}QueryMapper;

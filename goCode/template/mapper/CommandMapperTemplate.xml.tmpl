@@ -8,17 +8,11 @@
         INSERT INTO {{.Table}} (
                 /*{{.InfrastructurePackage}}.repository.{{.ModelUpperCase}}CommandMapper.create{{.DomainUpperCase}}*/
             {{- range $index, $element := .Columns }}
-              {{- if .IsDefault }}
-              {{- else }}
               {{ if $index }}, {{ else }}  {{ end }}{{- .Name}}
-              {{- end }}
             {{- end }}
         ) VALUES (
             {{- range $index, $element := .Columns }}
-                {{- if .IsDefault }}
-                {{- else }}
               {{ if $index }}, {{ else }}  {{ end }}#{{printf "{%s}" .LowerCaseName}}
-                {{- end }}
             {{- end }}
         )
     </insert>
