@@ -1,5 +1,6 @@
 package thread.executor.future;
 
+import java.util.Dictionary;
 import java.util.Random;
 import java.util.concurrent.*;
 
@@ -15,6 +16,8 @@ public class CallableMainV1 {
         Integer result = future.get();
         log("result value = " + result);
         es.close();
+
+
     }
 
     static class MyCallable implements Callable<Integer> {
