@@ -7,6 +7,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+import static network.tcp.SocketCloseUtil.*;
 import static util.MyLogger.log;
 
 public class SessionV6 implements Runnable {
@@ -29,14 +30,14 @@ public class SessionV6 implements Runnable {
     public void run() {
         try  {
             while (true) {
-                String reveived = input.readUTF();
-                log("clinet -> server: " + reveived);
+                String received = input.readUTF();
+                log("client -> server: " + received);
 
-                if (reveived.equals("exit")) {
+                if (received.equals("exit")) {
                     break;
                 }
 
-                String toSend = reveived + " World!";
+                String toSend = received + " World!";
                 output.writeUTF(toSend);
                 log("clinet <- server: " + toSend);
             }
@@ -50,12 +51,13 @@ public class SessionV6 implements Runnable {
         log("연결 종료: " + socket + " isClosed: " + socket.isClosed());
     }
 
+    // 세션 종류, 서버 종료시 동시에 호출될 수 있따.
     public synchronized void close() {
         if (closed) {
             return;
         }
 
-        SocketCloseUtil.closeAll(socket, input, output);
+        closeAll(socket, input, output);
         closed = true;
         log("연결 종료: " + socket + " isClosed: " + socket.isClosed());
     }
