@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.okestro.tps.api.infrastructure.persistence.mapper.TbTpsWk02cCommandMapper">
+
+    <!-- TbTpsWk02c 생성 -->
+    <insert id="createcdMrgCelCompnDtl"
+            parameterType="org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk02c">
+        INSERT INTO TB_TPS_WK_02C (
+                /*org.okestro.tps.api.infrastructure.persistence.repository.TbTpsWk02cCommandMapper.createcdMrgCelCompnDtl*/
+                COMPN_CD
+              , COMPN_VSRN
+              , MERGE_TRGT_BRNCH_CD
+              , TASK_AUTHRT_USE_YN
+              , TASK_AUTHRT_CD
+              , PRCR_ID
+              , REG_DT
+              , RGTR_ID
+        ) VALUES (
+                #{compnCd}
+              , #{compnVsrn}
+              , #{mergeTrgtBrnchCd}
+              , #{taskAuthrtUseYn}
+              , #{taskAuthrtCd}
+              , #{prcrId}
+              , #{regDt}
+              , #{rgtrId}
+        )
+    </insert>
+
+    <!-- TbTpsWk02c 수정 -->
+    <update id="updatecdMrgCelCompnDtl"
+            parameterType="org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk02c">
+        UPDATE TB_TPS_WK_02C
+               /*org.okestro.tps.api.infrastructure.persistence.repository.TbTpsWk02cCommandMapper.updatecdMrgCelCompnDtl*/
+           SET
+               MERGE_TRGT_BRNCH_CD = #{mergeTrgtBrnchCd}
+             , TASK_AUTHRT_USE_YN = #{taskAuthrtUseYn}
+             , TASK_AUTHRT_CD = #{taskAuthrtCd}
+             , PRCR_ID = #{prcrId}
+         WHERE
+               COMPN_CD = #{compnCd}
+           AND COMPN_VSRN = #{compnVsrn}
+    </update>
+
+    <!-- TbTpsWk02c 다중 삭제 -->
+    <delete id="deletecdMrgCelCompnDtl"
+            parameterType="org.okestro.tps.api.infrastructure.persistence.model.TbTpsWk02c">
+        DELETE /*org.okestro.tps.api.infrastructure.persistence.repository.TbTpsWk02cCommandMapper.deletecdMrgCelCompnDtl*/
+          FROM TB_TPS_WK_02C
+         WHERE (COMPN_CD,COMPN_VSRN) IN (
+               <foreach collection="list" index="index" item="item" separator=",">
+               (
+                  #{item.compnCd},
+                  #{item.compnVsrn}
+               )
+               </foreach>
+               )
+    </delete>
+</mapper>
