@@ -11,4 +11,5 @@ public @interface Range {
     int min();
     int max();
     String message() default "범위를 넘었습니다.";
+
 }

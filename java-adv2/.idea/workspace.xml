@@ -5,228 +5,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddf547a7-62c9-43d0-97d8-3eb97337bc83" name="Changes" comment="20241025">
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/charset/AvailableCharsetsMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/charset/EncodingMain1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/charset/EncodingMain2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/client/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/client/ClientMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/client/ReadHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/client/WriteHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/CommandManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/CommandManagerV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/CommandManagerV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/CommandManagerV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/CommandManagerV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/Server$ShutdownHook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/ServerMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/Session.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/SessionManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/command/ChangeCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/command/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/command/DefaultCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/command/ExitCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/command/JoinCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/command/MessageCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/chat/server/command/UsersCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/buffer/BufferedConst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/buffer/CreateFileV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/buffer/CreateFileV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/buffer/CreateFileV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/buffer/CreateFileV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/buffer/ReadFileV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/buffer/ReadFileV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/buffer/ReadFileV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/buffer/ReadFileV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/NewFilesMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/NewFilesPath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/OldFileMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/OldFilePath.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/copy/CreateCopyFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/copy/FileCopyMainV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/copy/FileCopyMainV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/copy/FileCopyMainV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/text/ReadTextFileV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/file/text/ReadTextFileV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/member/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/member/MemberConsoleMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/member/MemberRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/member/impl/DataMemberRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/member/impl/FileMemberRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/member/impl/MemoryMemberRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/member/impl/ObjectMemberRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/start/ByteArrayStreamMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/start/PrintStreamMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/start/StreamStartMain1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/start/StreamStartMain2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/start/StreamStartMain3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/streams/DataStreamEtcMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/streams/PrintStreamEtcMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/text/ReadWriterMainV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/text/ReadWriterMainV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/text/ReadWriterMainV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/text/ReadWriterMainV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/io/text/TextConst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/chatting/ChatClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/chatting/ChatServer$ShutdownHook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/chatting/ChatServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/chatting/ChatSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/chatting/ChatSessionManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/exception/close/normal/NormalCloseClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/exception/close/normal/NormalCloseServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/exception/close/reset/ResetCloseClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/exception/close/reset/ResetCloseServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/exception/connect/ConnectMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/exception/connect/ConnectTimeoutMain1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/exception/connect/ConnectTimeoutMain2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/exception/connect/SoTimeoutClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/exception/connect/SoTimeoutServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/SocketCloseUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/autocloseable/CallException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/autocloseable/CloseException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/autocloseable/ResourceCloseMainV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/autocloseable/ResourceCloseMainV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/autocloseable/ResourceCloseMainV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/autocloseable/ResourceV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/autocloseable/ResourceV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v1/ClientV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v1/InetAddressMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v1/ServerV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v2/ClientV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v2/ServerV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v3/ClientV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v3/ServerV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v3/SessionV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v4/ClientV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v4/ServerV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v4/SessionV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v5/ClientV5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v5/ServerV5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v5/SessionV5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v6/ClientV6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v6/ServerV6$ShutdownHook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v6/ServerV6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v6/SessionManagerV6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/network/tcp/v6/SessionV6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/BasicV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/BasicV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/ConstructV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/ConstructV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/FieldUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/FieldV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/FiledV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/FiledV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/FiledV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/MethodV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/MethodV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/MethodV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/data/BasicData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/data/Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/data/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/reflection/data/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/util/MyLogger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/HttpRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/HttpRequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/HttpResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/HttpServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/HttpServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/PageNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/ServletManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/servlet/DiscardServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/servlet/InternalErrorServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/httpserver/servlet/NotFoundServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v1/HttpServerV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v1/ServerMainV1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v2/HttpRequestHandlerV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v2/HttpServerV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v2/ServerMainV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v3/HttpRequestHandlerV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v3/HttpServerV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v3/PercentEncodingMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v3/ServerMainV3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v4/HttpRequestHandlerV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v4/HttpServerV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v4/ServerMainV4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v5/ServerMainV5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v5/servlet/HomeServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v5/servlet/SearchServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v5/servlet/Site1Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-adv2/was/v5/servlet/Site2Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/charset/AvailableCharsetsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charset/AvailableCharsetsMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/charset/EncodingMain1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charset/EncodingMain1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/charset/EncodingMain2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/charset/EncodingMain2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/feature.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/buffer/BufferedConst.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/buffer/CreateFileV1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/buffer/CreateFileV2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/buffer/CreateFileV3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/buffer/CreateFileV4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/buffer/ReadFileV1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/buffer/ReadFileV2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/buffer/ReadFileV3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/buffer/ReadFileV4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/NewFilesMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/NewFilesMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/NewFilesPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/NewFilesPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/OldFileMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/OldFileMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/OldFilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/OldFilePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/copy/CreateCopyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/copy/CreateCopyFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/copy/FileCopyMainV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/copy/FileCopyMainV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/copy/FileCopyMainV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/copy/FileCopyMainV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/copy/FileCopyMainV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/copy/FileCopyMainV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/text/ReadTextFileV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/text/ReadTextFileV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/file/text/ReadTextFileV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/file/text/ReadTextFileV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/member/MemberConsoleMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/member/MemberConsoleMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/member/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/member/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/member/impl/DataMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/member/impl/DataMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/member/impl/FileMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/member/impl/FileMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/member/impl/ObjectMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/member/impl/ObjectMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/start/ByteArrayStreamMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/start/ByteArrayStreamMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/start/PrintStreamMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/start/PrintStreamMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/start/StreamStartMain1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/start/StreamStartMain1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/start/StreamStartMain2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/start/StreamStartMain2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/start/StreamStartMain3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/start/StreamStartMain3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/streams/DataStreamEtcMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/streams/DataStreamEtcMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/streams/PrintStreamEtcMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/streams/PrintStreamEtcMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/text/ReadWriterMainV1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/text/ReadWriterMainV2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/text/ReadWriterMainV3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/text/ReadWriterMainV4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/text/TextConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/text/TextConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/SocketCloseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/SocketCloseUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/autocloseable/ResourceCloseMainV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/autocloseable/ResourceCloseMainV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/autocloseable/ResourceCloseMainV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/autocloseable/ResourceCloseMainV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/autocloseable/ResourceCloseMainV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/autocloseable/ResourceCloseMainV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v1/ClientV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v1/ClientV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v1/InetAddressMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v1/InetAddressMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v1/ServerV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v1/ServerV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v2/ClientV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v2/ClientV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v2/ServerV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v2/ServerV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v3/ClientV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v3/ClientV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v3/ServerV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v3/ServerV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v3/SessionV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v3/SessionV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v4/ClientV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v4/ClientV4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v4/ServerV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v4/ServerV4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v4/SessionV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v4/SessionV4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v5/ClientV5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v5/ClientV5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v5/ServerV5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v5/ServerV5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v5/SessionV5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v5/SessionV5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v6/ClientV6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v6/ClientV6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v6/SessionManagerV6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v6/SessionManagerV6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/network/tcp/v6/SessionV6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/network/tcp/v6/SessionV6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/MyLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MyLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/data.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/hello.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/hello.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/hello2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/member-txt.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/members-data.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/members-obj.dat" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_adv1/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/ElementData1Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/ElementData1Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/ElementData2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/ElementData2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/inherited/Child.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/inherited/Child.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/inherited/InheritedMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/inherited/InheritedMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/java/DeprecatedClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/java/DeprecatedClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/java/DeprecatedMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/java/DeprecatedMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/java/OverrideMain$B.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/java/OverrideMain$B.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/java/SuppressWarningCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/java/SuppressWarningCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/mapping/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/mapping/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/mapping/TestControllerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/mapping/TestControllerMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/ValidatorV1Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/ValidatorV1Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/ValidatorV2Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/ValidatorV2Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV3$ControllerMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV3$ControllerMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/reflection/ReflectionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/reflection/ReflectionServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v6/SiteControllerV6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v6/SiteControllerV6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v7/ServerMainV7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v7/ServerMainV7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v7/SiteControllerV7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v7/SiteControllerV7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v8/ServerMainV8.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v8/ServerMainV8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v8/SiteControllerV8.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v8/SiteControllerV8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/webservice/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/webservice/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/webservice/MemberServiceMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/webservice/MemberServiceMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/AnnoElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/AnnoElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/ElementData1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/ElementData1Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/ElementData2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/ElementData2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/MetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/MetaData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/Child.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/InheritedAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/InheritedAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/InheritedMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/InheritedMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/NoInheritedAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/NoInheritedAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/java/DeprecatedClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/java/DeprecatedClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/java/DeprecatedMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/java/DeprecatedMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/java/OverrideMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/java/OverrideMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/java/SuppressWarningCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/java/SuppressWarningCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/mapping/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/mapping/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/mapping/TestControllerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/mapping/TestControllerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/NotEmpty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/NotEmpty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/Range.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/ValidatorV1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/ValidatorV1Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/ValidatorV2Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/ValidatorV2Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/reflection/ReflectionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/reflection/ReflectionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/was/v6/SiteControllerV6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v6/SiteControllerV6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/was/v7/ServerMainV7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v7/ServerMainV7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/was/v7/SiteControllerV7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v7/SiteControllerV7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/was/v8/ServerMainV8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v8/ServerMainV8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/was/v8/SiteControllerV8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v8/SiteControllerV8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservice/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/MemberServiceMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservice/MemberServiceMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,6 +99,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -266,12 +114,12 @@
     &quot;assignee&quot;: &quot;scofe97&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/scofe97/back_study.git&quot;,
-    &quot;accountId&quot;: &quot;c5c53e0a-f8e2-4cf0-a2b1-3beda5d66fa7&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/scofe97/back_study.git",
+    "accountId": "5d06eb93-a3d9-4e1c-a92f-4e6ba49288ae"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -284,11 +132,28 @@
   "keyToString": {
     "Application.EncodingMain1.executor": "Run",
     "Application.Main.executor": "Run",
+    "Gradle.java-adv2 [:annotation.basic.MetaData.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.basic.inherited.InheritedMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.java.DeprecatedMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.java.OverrideMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.mapping.TestControllerMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.validator.ValidatorV1Main.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.validator.ValidatorV2Main.main()].executor": "Run",
+    "Gradle.java-adv2 [:io.member.MemberConsoleMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:was.v6.ServerMainV6.main()].executor": "Run",
+    "Gradle.java-adv2 [:was.v7.ServerMainV7.main()].executor": "Run",
+    "Gradle.java-adv2 [:was.v7.ServerMainV8.main()].executor": "Run",
+    "Gradle.java-adv2 [:was.v8.ServerMainV8.main()].executor": "Run",
+    "Gradle.java-adv2 [:webservice.MemberServiceMain.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/study/back_study/java-adv2",
+    "last_opened_file_path": "/Users/simbohyeon/study/back_study/java-adv2/src/main/java/was/v8",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -301,13 +166,80 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="ServerMainV6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="was.v6.ServerMainV6" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/was/v8" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="was.httpserver.servlet.annotation" />
+      <recent name="was.v7" />
+      <recent name="annotation.validator" />
+      <recent name="annotation.basic.inherited" />
+      <recent name="annotation.basic" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MemberServiceMain">
+    <configuration name="DeprecatedMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="annotation.java.DeprecatedMain" />
       <module name="java-adv2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="was.v6.*" />
+          <option name="PATTERN" value="annotation.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberConsoleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.member.MemberConsoleMain" />
+      <module name="java-adv2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.member.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberServiceMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webservice.MemberServiceMain" />
+      <module name="java-adv2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OverrideMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="annotation.java.OverrideMain" />
+      <module name="java-adv2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="annotation.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerMainV8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="was.v8.ServerMainV8" />
+      <module name="java-adv2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="was.v8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -330,15 +262,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ServerMainV6" />
+        <item itemvalue="Application.MemberConsoleMain" />
+        <item itemvalue="Application.MemberServiceMain" />
+        <item itemvalue="Application.ServerMainV8" />
+        <item itemvalue="Application.DeprecatedMain" />
+        <item itemvalue="Application.OverrideMain" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
       </set>
     </attachedChunks>
   </component>
@@ -374,6 +310,7 @@
       <workItem from="1731330856251" duration="20000" />
       <workItem from="1731330905441" duration="46000" />
       <workItem from="1731330968681" duration="81000" />
+      <workItem from="1731737174070" duration="14756000" />
     </task>
     <task id="LOCAL-00001" summary="20241025">
       <option name="closed" value="true" />
@@ -392,6 +329,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20241025" />
     <option name="LAST_COMMIT_MESSAGE" value="20241025" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -9,4 +9,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface NotEmpty {
     String message() default "값이 비어있습니다.";
+
 }

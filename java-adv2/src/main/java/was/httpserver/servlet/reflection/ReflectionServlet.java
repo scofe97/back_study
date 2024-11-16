@@ -12,28 +12,32 @@ import java.util.List;
 
 public class ReflectionServlet implements HttpServlet {
 
-    private final List<Object> controllers;
+    private final List<Object> controller;
 
-    public ReflectionServlet(List<Object> controllers) {
-        this.controllers = controllers;
+    public ReflectionServlet(List<Object> controller) {
+        this.controller = controller;
     }
 
     @Override
     public void service(HttpRequest request, HttpResponse response) throws IOException {
         String path = request.getPath();
 
-        for (Object controller : controllers) {
+        // SiteControllerV6, SearchControllerV6
+        for (Object controller : controller) {
             Class<?> aClass = controller.getClass();
             Method[] methods = aClass.getDeclaredMethods();
+
+            // site1, site2
             for (Method method : methods) {
                 String methodName = method.getName();
-                if (path.equals("/" + methodName)) {
+                if (path.equals("/" + methodName)) { // site1.equals(/site1)
                     invoke(controller, method, request, response);
                     return;
                 }
             }
+
+            throw new PageNotFoundException("request = " + path);
         }
-        throw new PageNotFoundException("request = " + path);
     }
 
     private static void invoke(Object controller, Method method, HttpRequest request, HttpResponse response) {

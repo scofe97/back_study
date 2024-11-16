@@ -14,31 +14,33 @@ public class AnnotationServletV2 implements HttpServlet {
 
     private final List<Object> controllers;
 
+
     public AnnotationServletV2(List<Object> controllers) {
         this.controllers = controllers;
     }
 
     @Override
     public void service(HttpRequest request, HttpResponse response) throws IOException {
+
         String path = request.getPath();
 
         for (Object controller : controllers) {
             Method[] methods = controller.getClass().getDeclaredMethods();
             for (Method method : methods) {
-                if (method.isAnnotationPresent(Mapping.class)) {
-                    Mapping mapping = method.getAnnotation(Mapping.class);
-                    String value = mapping.value();
-                    if (value.equals(path)) {
-                        invoke(controller, method, request, response);
-                        return;
-                    }
+                Mapping mapping = method.getAnnotation(Mapping.class);
+                String value = mapping.value();
+
+                if (value.equals(path)) {
+                    invoke(request, response, controller, method);
+                    return;
                 }
             }
         }
         throw new PageNotFoundException("request=" + path);
     }
 
-    private static void invoke(Object controller, Method method, HttpRequest request, HttpResponse response) {
+    private static void invoke(HttpRequest request, HttpResponse response, Object controller, Method method) {
+
         Class<?>[] parameterTypes = method.getParameterTypes();
         Object[] args = new Object[parameterTypes.length];
 
@@ -59,6 +61,3 @@ public class AnnotationServletV2 implements HttpServlet {
         }
     }
 }
-
-
-

@@ -3,7 +3,7 @@ package annotation.validator;
 import java.lang.reflect.Field;
 
 public class Validator {
-
+    
     public static void validate(Object obj) throws Exception {
         Field[] fields = obj.getClass().getDeclaredFields();
 
@@ -21,7 +21,7 @@ public class Validator {
             if (field.isAnnotationPresent(Range.class)) {
                 long value = field.getLong(obj);
                 Range annotation = field.getAnnotation(Range.class);
-                if (value < annotation.min() || value > annotation.max()) {
+                if(value < annotation.min() || value > annotation.max()) {
                     throw new RuntimeException(annotation.message());
                 }
             }

@@ -13,8 +13,8 @@ import java.util.List;
 import java.util.Map;
 
 public class AnnotationServletV3 implements HttpServlet {
-
     private final Map<String, ControllerMethod> pathMap;
+
 
     public AnnotationServletV3(List<Object> controllers) {
         this.pathMap = new HashMap<>();
@@ -25,14 +25,13 @@ public class AnnotationServletV3 implements HttpServlet {
         for (Object controller : controllers) {
             Method[] methods = controller.getClass().getDeclaredMethods();
             for (Method method : methods) {
-                if(method.isAnnotationPresent(Mapping.class)) {
+                if (method.isAnnotationPresent(Mapping.class)) {
                     String path = method.getAnnotation(Mapping.class).value();
 
-                    // 중복 경로 체크
                     if (pathMap.containsKey(path)) {
                         ControllerMethod controllerMethod = pathMap.get(path);
-                        throw new IllegalStateException("경로 중복 등록, path=" + path +
-                                ", method=" + method + ", 이미 등록된 메서드=" + controllerMethod.method);
+                        throw new IllegalArgumentException("경로 중복 등록, path=" + path + ", method=" + method + ", 이미 등록된 메서드="
+                                + controllerMethod.method);
                     }
 
                     pathMap.put(path, new ControllerMethod(controller, method));
@@ -44,10 +43,9 @@ public class AnnotationServletV3 implements HttpServlet {
     @Override
     public void service(HttpRequest request, HttpResponse response) throws IOException {
         String path = request.getPath();
-
         ControllerMethod controllerMethod = pathMap.get(path);
 
-        if (controllerMethod == null) {
+        if(controllerMethod == null) {
             throw new PageNotFoundException("request=" + path);
         }
 
@@ -64,6 +62,7 @@ public class AnnotationServletV3 implements HttpServlet {
         }
 
         public void invoke(HttpRequest request, HttpResponse response) {
+
             Class<?>[] parameterTypes = method.getParameterTypes();
             Object[] args = new Object[parameterTypes.length];
 
@@ -85,6 +84,3 @@ public class AnnotationServletV3 implements HttpServlet {
         }
     }
 }
-
-
-

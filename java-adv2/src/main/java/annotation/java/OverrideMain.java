@@ -2,15 +2,15 @@ package annotation.java;
 
 public class OverrideMain {
 
-    static class A {
+    static class A{
         public void call() {
             System.out.println("A.call");
         }
     }
 
-    static class B extends A {
-        //@Override // 주석 풀면 컴파일 오류
-        public void calllll() {
+    static class B extends A{
+        @Override
+        public void call() {
             System.out.println("B.call");
         }
     }

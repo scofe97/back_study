@@ -1,12 +1,12 @@
 package annotation.basic;
 
-@AnnoMeta // 타입에 적용
+@AnnoMeta
 public class MetaData {
 
-    //@AnnoMeta // 필드에 적용 - 컴파일 오류
+    // @AnnoMeta
     private String id;
 
-    @AnnoMeta // 메서드에 적용
+    @AnnoMeta
     public void call() {
 
     }
