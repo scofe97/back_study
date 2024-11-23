@@ -4,75 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddf547a7-62c9-43d0-97d8-3eb97337bc83" name="Changes" comment="20241025">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_adv1/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="ddf547a7-62c9-43d0-97d8-3eb97337bc83" name="Changes" comment="20241116">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/ElementData1Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/ElementData1Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/ElementData2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/ElementData2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/inherited/Child.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/inherited/Child.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/inherited/InheritedMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/basic/inherited/InheritedMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/java/DeprecatedClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/java/DeprecatedClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/java/DeprecatedMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/java/DeprecatedMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/java/OverrideMain$B.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/java/OverrideMain$B.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/java/SuppressWarningCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/java/SuppressWarningCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/mapping/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/mapping/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/mapping/TestControllerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/mapping/TestControllerMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/ValidatorV1Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/ValidatorV1Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/ValidatorV2Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/annotation/validator/ValidatorV2Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV3$ControllerMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV3$ControllerMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/annotation/AnnotationServletV3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/reflection/ReflectionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/httpserver/servlet/reflection/ReflectionServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v6/SiteControllerV6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v6/SiteControllerV6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v7/ServerMainV7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v7/ServerMainV7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v7/SiteControllerV7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v7/SiteControllerV7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v8/ServerMainV8.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v8/ServerMainV8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/was/v8/SiteControllerV8.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/was/v8/SiteControllerV8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/webservice/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/webservice/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/webservice/MemberServiceMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/webservice/MemberServiceMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/AnnoElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/AnnoElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/ElementData1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/ElementData1Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/ElementData2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/ElementData2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/MetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/MetaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/InheritedAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/InheritedAnnotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/InheritedMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/InheritedMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/NoInheritedAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/basic/inherited/NoInheritedAnnotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/java/DeprecatedClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/java/DeprecatedClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/java/DeprecatedMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/java/DeprecatedMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/java/OverrideMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/java/OverrideMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/java/SuppressWarningCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/java/SuppressWarningCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/mapping/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/mapping/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/mapping/TestControllerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/mapping/TestControllerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/NotEmpty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/NotEmpty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/Range.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/ValidatorV1Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/ValidatorV1Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/annotation/validator/ValidatorV2Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/annotation/validator/ValidatorV2Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/annotation/AnnotationServletV3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/reflection/ReflectionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/httpserver/servlet/reflection/ReflectionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/was/v6/SiteControllerV6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v6/SiteControllerV6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/was/v7/ServerMainV7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v7/ServerMainV7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/was/v7/SiteControllerV7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v7/SiteControllerV7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/was/v8/ServerMainV8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v8/ServerMainV8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/was/v8/SiteControllerV8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/was/v8/SiteControllerV8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservice/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/MemberServiceMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservice/MemberServiceMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,12 +47,12 @@
     &quot;assignee&quot;: &quot;scofe97&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/scofe97/back_study.git",
-    "accountId": "5d06eb93-a3d9-4e1c-a92f-4e6ba49288ae"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/scofe97/back_study.git&quot;,
+    &quot;accountId&quot;: &quot;5d06eb93-a3d9-4e1c-a92f-4e6ba49288ae&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -128,44 +61,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EncodingMain1.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Gradle.java-adv2 [:annotation.basic.MetaData.main()].executor": "Run",
-    "Gradle.java-adv2 [:annotation.basic.inherited.InheritedMain.main()].executor": "Run",
-    "Gradle.java-adv2 [:annotation.java.DeprecatedMain.main()].executor": "Run",
-    "Gradle.java-adv2 [:annotation.java.OverrideMain.main()].executor": "Run",
-    "Gradle.java-adv2 [:annotation.mapping.TestControllerMain.main()].executor": "Run",
-    "Gradle.java-adv2 [:annotation.validator.ValidatorV1Main.main()].executor": "Run",
-    "Gradle.java-adv2 [:annotation.validator.ValidatorV2Main.main()].executor": "Run",
-    "Gradle.java-adv2 [:io.member.MemberConsoleMain.main()].executor": "Run",
-    "Gradle.java-adv2 [:was.v6.ServerMainV6.main()].executor": "Run",
-    "Gradle.java-adv2 [:was.v7.ServerMainV7.main()].executor": "Run",
-    "Gradle.java-adv2 [:was.v7.ServerMainV8.main()].executor": "Run",
-    "Gradle.java-adv2 [:was.v8.ServerMainV8.main()].executor": "Run",
-    "Gradle.java-adv2 [:webservice.MemberServiceMain.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/simbohyeon/study/back_study/java-adv2/src/main/java/was/v8",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/study/back_study/java-adv2/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EncodingMain1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:annotation.basic.MetaData.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:annotation.basic.inherited.InheritedMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:annotation.java.DeprecatedMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:annotation.java.OverrideMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:annotation.mapping.TestControllerMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:annotation.validator.ValidatorV1Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:annotation.validator.ValidatorV2Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:io.member.MemberConsoleMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:was.v6.ServerMainV6.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:was.v7.ServerMainV7.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:was.v7.ServerMainV8.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:was.v8.ServerMainV8.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-adv2 [:webservice.MemberServiceMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/simbohyeon/study/back_study/java-adv2/src/main/java/was/v8&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/study/back_study/java-adv2/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/was/v8" />
@@ -247,19 +180,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="java-adv2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="java-adv2" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MemberConsoleMain" />
@@ -310,7 +230,8 @@
       <workItem from="1731330856251" duration="20000" />
       <workItem from="1731330905441" duration="46000" />
       <workItem from="1731330968681" duration="81000" />
-      <workItem from="1731737174070" duration="14756000" />
+      <workItem from="1731737174070" duration="16421000" />
+      <workItem from="1731838835927" duration="40000" />
     </task>
     <task id="LOCAL-00001" summary="20241025">
       <option name="closed" value="true" />
@@ -320,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729846958016</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20241116">
+      <option name="closed" value="true" />
+      <created>1731757549503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731757549503</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +257,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20241025" />
-    <option name="LAST_COMMIT_MESSAGE" value="20241025" />
+    <MESSAGE value="20241116" />
+    <option name="LAST_COMMIT_MESSAGE" value="20241116" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
