@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddf547a7-62c9-43d0-97d8-3eb97337bc83" name="Changes" comment="20241116">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collection/src/main/java/org/example/functional/TestJava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../collection/src/main/java/org/example/functional/TestJava2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/8.7/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/8.7/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/8.7/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/8.7/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/8.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/8.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/8.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/8.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/8.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/8.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/8.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/8.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/8.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/8.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../collection/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/src/main/java/com/example/collection/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/src/main/java/com/example/collection/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collection/src/main/java/module-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,44 +78,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.EncodingMain1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:annotation.basic.MetaData.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:annotation.basic.inherited.InheritedMain.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:annotation.java.DeprecatedMain.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:annotation.java.OverrideMain.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:annotation.mapping.TestControllerMain.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:annotation.validator.ValidatorV1Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:annotation.validator.ValidatorV2Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:io.member.MemberConsoleMain.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:was.v6.ServerMainV6.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:was.v7.ServerMainV7.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:was.v7.ServerMainV8.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:was.v8.ServerMainV8.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.java-adv2 [:webservice.MemberServiceMain.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/simbohyeon/study/back_study/java-adv2/src/main/java/was/v8&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/study/back_study/java-adv2/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EncodingMain1.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Gradle.java-adv2 [:annotation.basic.MetaData.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.basic.inherited.InheritedMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.java.DeprecatedMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.java.OverrideMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.mapping.TestControllerMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.validator.ValidatorV1Main.main()].executor": "Run",
+    "Gradle.java-adv2 [:annotation.validator.ValidatorV2Main.main()].executor": "Run",
+    "Gradle.java-adv2 [:io.member.MemberConsoleMain.main()].executor": "Run",
+    "Gradle.java-adv2 [:was.v6.ServerMainV6.main()].executor": "Run",
+    "Gradle.java-adv2 [:was.v7.ServerMainV7.main()].executor": "Run",
+    "Gradle.java-adv2 [:was.v7.ServerMainV8.main()].executor": "Run",
+    "Gradle.java-adv2 [:was.v8.ServerMainV8.main()].executor": "Run",
+    "Gradle.java-adv2 [:webservice.MemberServiceMain.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/study/back_study/functional-java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/study/back_study/java-adv2/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/was/v8" />
