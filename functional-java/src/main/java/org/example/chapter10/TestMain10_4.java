@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-public class TestMain10_3 {
+public class TestMain10_4 {
     public static void main(String[] args) {
 
         Path path1 = Paths.get("test1.txt");
@@ -16,15 +16,16 @@ public class TestMain10_3 {
         Path path4 = Paths.get("test4.txt");
 
         Stream.of(path1, path2, path3)
-                .map(TestMain10_3::safeReadString)
+                .map(TestMain10_4::safeReadString)
+                .filter(Result::isSuccess)
                 .forEach(System.out::println);
     }
 
-    public static Optional<String> safeReadString(Path path) {
+    public static Result<String, IOException> safeReadString(Path path) {
         try {
-            return Optional.of(Files.readString(path));
+            return Result.success(Files.readString(path));
         } catch (IOException exception) {
-            return Optional.empty();
+            return Result.failure(exception);
         }
     }
 }
