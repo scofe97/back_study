@@ -10,6 +10,7 @@ public class TestMain7_5 {
 
     public static void main(String[] args) {
 
+
         // 30개의 User 객체 생성
         List<User> users = IntStream.range(0, 30)
                 .mapToObj(i -> new User(
