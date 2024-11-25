@@ -13,6 +13,7 @@ public class TestMain10_3 {
         Path path1 = Paths.get("test1.txt");
         Path path2 = Paths.get("test2.txt");
         Path path3 = Paths.get("test3.txt");
+        Path path4 = Paths.get("test4.txt");
 
         Stream.of(path1, path2, path3)
                 .map(TestMain10_3::safeReadString) // 예외처리가 안된다.
