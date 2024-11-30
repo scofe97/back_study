@@ -1,4 +1,4 @@
-package org.example.chapter14.decorator_fp;
+package org.example.chapter14.decorator_oop;
 
 import java.util.ArrayList;
 import java.util.List;

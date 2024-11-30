@@ -1,4 +1,4 @@
-package org.example.chapter14.decorator_fp;
+package org.example.chapter14.decorator_oop;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,9 +18,7 @@ public class AddSugarDecorator extends Decorator {
 
     @Override
     public Coffee prepare() {
-        var coffee = super.prepare();
         // add sugar
-        return coffee;
+        return super.prepare();
     }
-
 }

@@ -1,6 +1,7 @@
-package org.example.chapter14.decorator_fp;
+package org.example.chapter14.decorator_oop;
 
 import java.util.List;
+import java.util.function.Function;
 
 public abstract class Decorator implements CoffeeMaker{
 
@@ -18,5 +19,13 @@ public abstract class Decorator implements CoffeeMaker{
     @Override
     public Coffee prepare() {
         return this.target.prepare();
+    }
+
+    public static Function<CoffeeMaker, CoffeeMaker> addMilk(MilkCarton milkCarton) {
+        return coffeeMaker -> new AddMilkDecorator(coffeeMaker, milkCarton);
+    }
+
+    public static Function<CoffeeMaker, CoffeeMaker> addSugar() {
+        return AddSugarDecorator::new;
     }
 }
